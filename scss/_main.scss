@@ -1,87 +1,4 @@
-#main-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
 
-    h1 {
-        a {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font: bold 26px/1 'NotoSansKR';
-            color: #fff;
-
-            &::before {
-                display: block;
-                content: '';
-                background-image: url(../img/logo/white.svg);
-                background-size: cover;
-                width: 40px;
-                height: 40px;
-            }
-        }
-
-    }
-
-    .header-gnb {
-        display: flex;
-
-        >li {
-            >a {
-                display: flex;
-                width: 160px;
-                height: 100%;
-                justify-content: center;
-                align-items: center;
-                font: 18px/1 'NotoSansKR';
-                color: #fff;
-            }
-        }
-
-        .header-sub {
-            display: none;
-        }
-    }
-
-    .header-icon {
-        height: 100%;
-        display: flex;
-        align-items: center;
-        li {
-            >a {
-                display: block;
-                width: 40px;
-                height: 40px;
-
-                i {
-                    font-size: 18px;
-                    line-height: 40px;
-                    color: #fff;
-                }
-            }
-            >span {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                height: 25px;
-        
-                >img {
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
-        }
-    }
-
-
-}
 
 #main-visual {
     position: relative;
@@ -127,68 +44,6 @@
         }
     }
 
-    .frame-index {
-        position: absolute;
-        bottom: -150px;
-        left: 70px;
-        width: 1200px;
-        height: 200px;
-        transform: translateY(-50%);
-        z-index: 3;
-        display: flex;
-        align-items: end;
-
-        >li {
-            position: relative;
-            flex: 1;
-            width: 100%;
-            height: 70%;
-            background-color: #68737A;
-            padding-top: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: start;
-            gap: 10px;
-
-            >a {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                gap: 10px;
-                font: 35px/1 'NotoSansKR';
-                color: #ddd;
-
-                >span {
-                    font-size: 25px;
-                }
-            }
-
-            &.on {
-                flex: 1.5;
-                height: 100%;
-                padding-top: 50px;
-
-                >a {
-                    font: 55px/1 'NotoSansKR';
-                    color: #fff;
-
-                    >span {
-                        font-size: 35px;
-                    }
-                }
-            }
-
-            .bar {
-                position: absolute;
-                top: -50px;
-                left: 0;
-                width: 0%;
-                height: 10px;
-                background-color: #DA2128;
-            }
-        }
-    }
-
     .frame-name {
         position: absolute;
         top: 50%;
@@ -209,7 +64,7 @@
             display: none;
 
             >a {
-                font: 22px/1 'NotoSansKR';
+                font: 20px/1 'NotoSansKR';
                 color: #fff;
                 position: relative;
 
@@ -236,4 +91,137 @@
             }
         }
     }
+}
+
+#field {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    .frame-index {
+        position: absolute;
+        top: -50px;
+        left: 70px;
+        width: 60vw;
+        height: 200px;
+        transform: translateY(-50%);
+        z-index: 3;
+        display: flex;
+        align-items: end;
+        transition: 0.5s;
+
+        >li {
+            position: relative;
+            flex: 1;
+            width: 100%;
+            height: 60%;
+            background-color: rgba($color: $mainColor, $alpha: .9);
+            padding-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            gap: 10px;
+            transition: 0.5s;
+
+            >a {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 10px;
+                font: 35px/1 'NotoSansKR';
+                color: #ddd;
+                cursor: default;
+
+                >span {
+                    font-size: 25px;
+                }
+            }
+
+            .bar {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 0%;
+                height: 10px;
+                background-color: #fff;
+            }
+
+            &.on {
+                flex: 1.5;
+                height: 100%;
+                padding-top: 50px;
+
+                >a {
+                    font: 55px/1 'NotoSansKR';
+                    color: #fff;
+
+                    >span {
+                        font-size: 35px;
+                    }
+                }
+
+                .bar {
+                    animation: bar-ani 5s linear;
+                }
+            }
+
+
+        }
+
+        &.on {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            >li {
+                flex: 1;
+                height: 100%;
+                padding-top: 50px;
+
+                >a {
+                    font: 55px/1 'NotoSansKR';
+                    color: #fff;
+
+                    >span {
+                        font-size: 35px;
+                    }
+                }
+
+                &.on {
+                    flex: 1;
+                    height: 100%;
+
+                }
+
+                .bar {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#news {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+#villiv {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+}
+
+#footer {
+    width: 100%;
+    height: 200px;
+    background-color: #000;
+}
+
+@keyframes bar-ani {
+    0% {width: 0%;}
+    100% {width: 100%;}
 }

@@ -9,27 +9,37 @@
     <script src="https://kit.fontawesome.com/612f062b7d.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="main-bg"></div>
     <header id="main-header">
-        <h1><a href="index.html">SHINSEGAE E&C</a></h1>
+        <h1><a href="index.html">SHINSEGAE E&C</a></h1>  
         <nav>
             <ul class="header-gnb">
                 <li>
                     <a href="#">회사소개</a>
                     <ul class="header-sub">
                         <li><a href="#">인사말</a></li>
-                        <li><a href="./html/vision.html">비전 & 경영이념</a></li>
-                        <li><a href="./html/history.html">연혁</a></li>
+                        <li><a href="./html/vision.html" class="sub-color">비전 & 경영이념</a></li>
+                        <li><a href="./html/history.html" class="sub-color">연혁</a></li>
                         <li><a href="#">미래성장 연구소</a></li>
-                        <li><a href="./html/location.html">오시는 길</a></li>
+                        <li><a href="./html/location.html" class="sub-color">오시는 길</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#">사업분야</a>
                     <ul class="header-sub">
-                        <li><a href="./html/field.html">주거시설</a></li>
-                        <li><a href="./html/field.html">건축시설</a></li>
-                        <li><a href="./html/field.html">토목시설</a></li>
-                        <li><a href="./html/field.htmlㄴ">레저사업</a></li>
+                        <li><a href="./html/field.html" class="sub-color">주거시설</a></li>
+                        <li><a href="./html/field.html" class="sub-color">건축시설</a></li>
+                        <li><a href="./html/field.html" class="sub-color">토목시설</a></li>
+                        <li><a href="./html/field.html" class="sub-color">레저사업</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </li>
                 <li>
@@ -37,7 +47,7 @@
                     <ul class="header-sub">
                         <li><a href="#">개요</a></li>
                         <li><a href="#">투명경영</a></li>
-                        <li><a href="./html/csr.html">사회공헌</a></li>
+                        <li><a href="./html/csr.html" class="sub-color">사회공헌</a></li>
                         <li><a href="#">품질경영</a></li>
                         <li><a href="#">안전보건경영</a></li>
                         <li><a href="#">친환경경영</a></li>
@@ -54,28 +64,28 @@
                         <li><a href="#">CI & BI</a></li>
                         <li><a href="#">투자정보</a></li>
                         <li><a href="#">채용</a></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
                     </ul>
                 </li>
             </ul>
         </nav>
+        <input type="text" name="search-txt" id="search-txt" placeholder="검색어를 입력해 주세요.">
+        <a href="#" class="search-close"><i class="fa-solid fa-x"></i></a>
         <ul class="header-icon">
-            <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+            <li><a href="#;"><i class="fa-solid fa-magnifying-glass search-btn"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
-            <li><span><img src="./img/logo/korean-white.svg" alt=""></span></li>
+            <li><span><img src="./img/logo/korean-white.svg" alt=""></span><span><img src="./img/logo/korean.svg" alt=""></span></li>
         </ul>
     </header>
-    <figure id="main-visual">
+    <figure id="main-visual" data-scroll>
         <ul class="frame">
             <li class="on"><img src="./img/visual/main_빌리브 하남.png" alt="메인 비주얼 빌리브 하남 사진"></li>        
             <li><img src="./img/visual/main_스타필드 하남.png" alt="메인 비주얼 스타필드 하남 사진"></li>
             <li><img src="./img/visual/main_오송2단지진입도로.png" alt="메인 비주얼 오송2단지 진입 도로 사진"></li>
             <li><img src="./img/visual/main_아쿠아필드고양.png" alt="메인 비주얼 아쿠아필드 고양 사진"></li>
-        </ul>
-        <ul class="frame-index">
-            <li class="on"><div class="bar on"></div><a href="#">주거시설<span>Housing</span></a></li>
-            <li><div class="bar"></div><a href="#">건축시설<span>Architecture</span></a></li>
-            <li><div class="bar"></div><a href="#">토목시설<span>Infrastructure</span></a></li>
-            <li><div class="bar"></div><a href="#">레저사업<span>Leisure</span></a></li>
         </ul>
         <ul class="frame-name">
             <li class="on"><a href="#">빌리브 하남 ></a></li>
@@ -84,5 +94,19 @@
             <li><a href="#">아쿠아필드 고양 ></a></li>
         </ul>
     </figure>
+    <section id="field" data-scroll>
+        <ul class="frame-index">
+            <li class="on"><div class="bar on"></div><a href="#">주거시설<span>Housing</span></a></li>
+            <li><div class="bar"></div><a href="#">건축시설<span>Architecture</span></a></li>
+            <li><div class="bar"></div><a href="#">토목시설<span>Infrastructure</span></a></li>
+            <li><div class="bar"></div><a href="#">레저사업<span>Leisure</span></a></li>
+        </ul>
+    </section>
+    <section id="news" data-scroll></section>
+    <section id="villiv" data-scroll></section>
+    <footer id="footer" data-scroll></footer>
 </body>
 </html>
+
+
+
