@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "NotoSansKR";
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#main-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+#main-header h1 a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: bold 26px/1 "NotoSansKR";
+  color: #fff;
+}
+#main-header h1 a::before {
+  display: block;
+  content: "";
+  background-image: url(../img/logo/white.svg);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+#main-header .header-gnb {
+  display: flex;
+}
+#main-header .header-gnb > li > a {
+  display: flex;
+  width: 160px;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font: 18px/1 "NotoSansKR";
+  color: #fff;
+}
+#main-header .header-gnb .header-sub {
+  display: none;
+}
+#main-header .header-icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+#main-header .header-icon li > a {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+#main-header .header-icon li > a i {
+  font-size: 18px;
+  line-height: 40px;
+  color: #fff;
+}
+#main-header .header-icon li > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+}
+#main-header .header-icon li > span > img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#main-visual {
+  position: relative;
+  width: 100%;
+  height: 95vh;
+}
+#main-visual .frame {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#main-visual .frame > li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+}
+#main-visual .frame > li > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#main-visual .frame > li.on {
+  opacity: 1;
+  z-index: 2;
+}
+#main-visual .frame > li::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+#main-visual .frame-index {
+  position: absolute;
+  bottom: -150px;
+  left: 70px;
+  width: 1200px;
+  height: 200px;
+  transform: translateY(-50%);
+  z-index: 3;
+  display: flex;
+  align-items: end;
+}
+#main-visual .frame-index > li {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 70%;
+  background-color: #68737A;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 10px;
+}
+#main-visual .frame-index > li > a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+  font: 35px/1 "NotoSansKR";
+  color: #ddd;
+}
+#main-visual .frame-index > li > a > span {
+  font-size: 25px;
+}
+#main-visual .frame-index > li.on {
+  flex: 1.5;
+  height: 100%;
+  padding-top: 50px;
+}
+#main-visual .frame-index > li.on > a {
+  font: 55px/1 "NotoSansKR";
+  color: #fff;
+}
+#main-visual .frame-index > li.on > a > span {
+  font-size: 35px;
+}
+#main-visual .frame-index > li .bar {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 0%;
+  height: 10px;
+  background-color: #DA2128;
+}
+#main-visual .frame-name {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  width: 400px;
+  height: 50px;
+  z-index: 3;
+}
+#main-visual .frame-name > li {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+#main-visual .frame-name > li > a {
+  font: 22px/1 "NotoSansKR";
+  color: #fff;
+  position: relative;
+}
+#main-visual .frame-name > li > a::after {
+  position: absolute;
+  bottom: -5px;
+  display: block;
+  content: "";
+  width: 0%;
+  height: 1px;
+  transition: 0.5s;
+  background-color: #fff;
+}
+#main-visual .frame-name > li > a:hover::after {
+  width: 100%;
+}
+#main-visual .frame-name > li.on {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */
