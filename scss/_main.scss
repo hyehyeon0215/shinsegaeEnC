@@ -142,8 +142,8 @@
                 top: 0;
                 left: 0;
                 width: 0%;
-                height: 10px;
-                background-color: #fff;
+                height: 5px;
+                background-color: rgba(255,255,255,.5);
             }
 
             &.on {
@@ -169,34 +169,96 @@
         }
 
         &.on {
-            top: 50%;
+            top: 40%;
             left: 50%;
+            width: 70vw;
+            height: 100px;
             transform: translate(-50%, -50%);
+            gap: 20px;
 
             >li {
                 flex: 1;
                 height: 100%;
-                padding-top: 50px;
+                padding-top: 0;
+                align-items: center;
+                background-color: $mainColor;
 
                 >a {
-                    font: 55px/1 'NotoSansKR';
+                    font: 30px/1 'NotoSansKR';
                     color: #fff;
 
                     >span {
-                        font-size: 35px;
+                        font-size: 25px;
                     }
-                }
-
-                &.on {
-                    flex: 1;
-                    height: 100%;
-
                 }
 
                 .bar {
                     display: none;
                 }
             }
+        }
+    }
+
+    .field-img {
+        position: absolute;
+        display: flex;
+        top: 40%;
+        left: 50%;
+        width: 70vw;
+        height: 400px;
+        transform: translate(-50%, -50%);
+        margin-top: 250px;
+        gap: 20px;
+        opacity: 0;
+
+        >li {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .field-txt {
+                position: absolute;
+                top: -170px;
+
+                span {
+                    color: $subColor;
+
+                    &.field-num {
+                        font: bold 60px/1 "arial";
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-left: 10px;
+                        font: 25px/1 "NotoSansKR";
+                    }
+                }
+            }
+            
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.5s;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            
+        }
+
+        &.on {
+            animation: opacity 1s linear;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
         }
     }
 }
@@ -224,4 +286,9 @@
 @keyframes bar-ani {
     0% {width: 0%;}
     100% {width: 100%;}
+}
+
+@keyframes opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
