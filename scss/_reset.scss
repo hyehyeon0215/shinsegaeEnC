@@ -12,5 +12,11 @@ a {
     color: #333;
 }
 
+.hidden {
+    position: absolute;
+    top: -99999999px;
+    opacity: 0;
+}
+
 $mainColor: #DA2128;
 $subColor:#4F5959;

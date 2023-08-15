@@ -11,7 +11,7 @@
     }
 }
 
-#main-header {
+#header {
     position: fixed;
     top: 0;
     left: 0;
@@ -265,7 +265,7 @@
             a {
                 color: $subColor;
                 &::before {
-                    background-image: url(../img/logo/color.svg);
+                    background-image: url(../../img/logo/color.svg);
                 }
             }
     

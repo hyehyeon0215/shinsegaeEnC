@@ -1,5 +1,3 @@
-
-
 #main-visual {
     position: relative;
     width: 100%;
@@ -115,7 +113,8 @@
             flex: 1;
             width: 100%;
             height: 60%;
-            background-color: rgba($color: $mainColor, $alpha: .9);
+            // background-color: rgba($color: $mainColor, $alpha: .9);
+            background-color: $mainColor;
             padding-top: 30px;
             display: flex;
             justify-content: center;
@@ -150,6 +149,7 @@
                 flex: 1.5;
                 height: 100%;
                 padding-top: 50px;
+                position: relative;
 
                 >a {
                     font: 55px/1 'NotoSansKR';
@@ -163,17 +163,17 @@
                 .bar {
                     animation: bar-ani 5s linear;
                 }
-            }
 
+            }
 
         }
 
         &.on {
-            top: 40%;
+            top: 30%;
             left: 50%;
             width: 70vw;
             height: 100px;
-            transform: translate(-50%, -50%);
+            transform: translateX(-50%);
             gap: 20px;
 
             >li {
@@ -184,11 +184,11 @@
                 background-color: $mainColor;
 
                 >a {
-                    font: 30px/1 'NotoSansKR';
+                    font: 26px/1 'NotoSansKR';
                     color: #fff;
 
                     >span {
-                        font-size: 25px;
+                        font-size: 20px;
                     }
                 }
 
@@ -202,12 +202,12 @@
     .field-img {
         position: absolute;
         display: flex;
-        top: 40%;
+        top: 20%;
         left: 50%;
         width: 70vw;
-        height: 400px;
-        transform: translate(-50%, -50%);
-        margin-top: 250px;
+        height: 50vh;
+        transform: translateX(-50%);
+        margin-top: 150px;
         gap: 20px;
         opacity: 0;
 
@@ -219,20 +219,37 @@
 
             .field-txt {
                 position: absolute;
-                top: -170px;
+                width: 100%;
+                top: -120px;
+                left: 10px;
 
                 span {
                     color: $subColor;
 
                     &.field-num {
-                        font: bold 60px/1 "arial";
+                        font: bold 3vw/1 "arial";
                     }
 
                     &:nth-of-type(2) {
                         margin-left: 10px;
-                        font: 25px/1 "NotoSansKR";
+                        font: 2vw/1 "NotoSansKR";
                     }
                 }
+
+                &::after {
+                    display: block;
+                    content: '';
+                    width: 3vw;
+                    height: 3vw;
+                    background-image: url('../img/icon/ic-project01.svg');
+                    background-size: cover;
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    opacity: .5;
+                }
+
             }
             
             a {
@@ -247,8 +264,31 @@
                     object-fit: cover;
                     transition: 0.5s;
 
+
                     &:hover {
                         transform: scale(1.2);
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                .field-txt {
+                    &::after {
+                        background-image: url('../img/icon/ic-project02.svg');
+                    }
+                }
+            }
+            &:nth-of-type(3) {
+                .field-txt {
+                    &::after {
+                        background-image: url('../img/icon/ic-project03.svg');
+                    }
+                }
+            }
+            &:nth-of-type(4) {
+                .field-txt {
+                    &::after {
+                        background-image: url('../img/icon/ic-project04.svg');
                     }
                 }
             }
@@ -274,14 +314,9 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: blue;
 }
 
-#footer {
-    width: 100%;
-    height: 200px;
-    background-color: #000;
-}
+
 
 @keyframes bar-ani {
     0% {width: 0%;}

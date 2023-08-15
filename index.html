@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <script defer src="script/main.js"></script>
     <script src="https://kit.fontawesome.com/612f062b7d.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
 </head>
 <body>
     <div class="main-bg"></div>
-    <header id="main-header">
+    <header id="header">
         <h1><a href="index.html">SHINSEGAE E&C</a></h1>  
         <nav>
             <ul class="header-gnb">
@@ -75,8 +76,9 @@
         <input type="text" name="search-txt" id="search-txt" placeholder="검색어를 입력해 주세요.">
         <a href="#" class="search-close"><i class="fa-solid fa-x"></i></a>
         <ul class="header-icon">
-            <li><a href="#;"><i class="fa-solid fa-magnifying-glass search-btn"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass search-btn"></i></a></li>
             <li><a href="#"><i class="fa-solid fa-globe"></i></a></li>
+            <li><a href="./html/sitemap.html"><i class="fa-solid fa-bars sitemap-btn"></i></a></li>
             <li><span><img src="./img/logo/korean-white.svg" alt=""></span><span><img src="./img/logo/korean.svg" alt=""></span></li>
         </ul>
     </header>
@@ -95,6 +97,7 @@
         </ul>
     </figure>
     <section id="field" data-scroll>
+        <h2 class="hidden">사업분야</h2>
         <ul class="frame-index">
             <li class="on"><div class="bar on"></div><a href="#">주거시설<span>Housing</span></a></li>
             <li><div class="bar"></div><a href="#">건축시설<span>Architecture</span></a></li>
@@ -102,18 +105,68 @@
             <li><div class="bar"></div><a href="#">레저사업<span>Leisure</span></a></li>
         </ul>
         <ul class="field-img">
-            <li><p class="field-txt"><span class="field-num">52</span><span>건</span></p><a href="#"><img src="./img/field/field-1.png" alt="신세계건설 주거시설 대표사진(빌리브 리버런트)"></a></li>
-            <li><p class="field-txt"><span class="field-num">465</span><span>건</span></p><a href="#"><img src="./img/field/field-2.png" alt="신세계건설 건축시설 대표사진(오시리아 리조트)"></a></li>
-            <li><p class="field-txt"><span class="field-num">61</span><span>건</span></p><a href="#"><img src="./img/field/field-3.png" alt="신세계건설 토목시설 대표사진(파주-양주 고속국도)"></a></li>
-            <li><p class="field-txt"><span class="field-num">10</span><span>개소</span></p><a href="#"><img src="./img/field/field-4.jpg" alt="신세계건설 레저사업 대표사진(카페 드 아쿠아 안성)"></a></li>
+            <li><p class="field-txt"><span class="field-num">52</span><span>건</span></p><a href="/html/field.html"><img src="./img/field/field-1.png" alt="신세계건설 주거시설 대표사진(빌리브 리버런트)"></a></li>
+            <li><p class="field-txt"><span class="field-num">465</span><span>건</span></p><a href="/html/field.html"><img src="./img/field/field-2.png" alt="신세계건설 건축시설 대표사진(오시리아 리조트)"></a></li>
+            <li><p class="field-txt"><span class="field-num">61</span><span>건</span></p><a href="/html/field.html"><img src="./img/field/field-3.png" alt="신세계건설 토목시설 대표사진(파주-양주 고속국도)"></a></li>
+            <li><p class="field-txt"><span class="field-num">10</span><span>개소</span></p><a href="/html/field.html"><img src="./img/field/field-4.jpg" alt="신세계건설 레저사업 대표사진(카페 드 아쿠아 안성)"></a></li>
         </ul>
-        <div class="main-inner">
-            <h2>사업 분야</h2>
-        </div>
     </section>
     <section id="news" data-scroll></section>
     <section id="villiv" data-scroll></section>
-    <footer id="footer" data-scroll></footer>
+    <footer id="footer" data-scroll>
+        <div class="footer-inner">
+            <div class="footer-left">
+                <h2>SHINSEGAE E&C</h2>
+                <ul class="footer-brand">
+                    <li><a href="#">빌리브</a></li>
+                    <li><a href="#">자유CC</a></li>
+                    <li><a href="#">트리니티클럽</a></li>
+                    <li><a href="#">아쿠아필드</a></li>
+                </ul>
+                <ul class="footer-menu">
+                    <li><a href="#"><ins>개인정보처리방침</ins></a></li>
+                    <li><a href="#">영상정보처리기기 운영 및 관리 방침</a></li>
+                    <li><a href="#">법적고지</a></li>
+                    <li><a href="#">고객상담</a></li>
+                    <li><a href="#">신세계건설 신문고</a></li>
+                </ul>
+                <!-- <select name="family-site" id="family-site">
+                    <option value="family-site1">신세계그룹 인사이드</option>
+                    <option value="family-site2">신세계백화점</option>
+                    <option value="family-site3">이마트</option>
+                    <option value="family-site4">신세계 사이먼</option>
+                    <option value="family-site5">이마트 에브리데이</option>
+                    <option value="family-site6">신세계디에프</option>
+                    <option value="family-site7">신세계TV쇼핑</option>
+                    <option value="family-site8">이마트24</option>
+                    <option value="family-site9">신세계프라퍼티</option>
+                    <option value="family-site10">SSG.COM</option>
+                    <option value="family-site11">신세계센트럴시티</option>
+                    <option value="family-site12">신세계 푸드</option>
+                    <option value="family-site13">조선호텔앤리조트</option>
+                    <option value="family-site14">스타벅스커피 코리아</option>
+                    <option value="family-site15">신세계엘엔비</option>
+                    <option value="family-site16">신세계인터내셔날</option>
+                    <option value="family-site17">신세계까사</option>
+                    <option value="family-site18">신세계아이앤씨</option>
+                    <option value="family-site19">시그나이트파트너스</option>
+                    <option value="family-site20">SSG랜더스</option>
+                </select> -->
+                <p>SHINSEGAE E&C All Rights Reserved © 2023</p>
+            </div>
+            <div class="footer-right">
+                <div class="footer-villiv">
+                    <a href="#"><img src="./img/logo/villiv-logo.png" alt="빌리브 로고"></a>
+                    <ul class="villiv-sns">
+                        <li><a href="#"><img src="./img/icon/ic-footer-facebook.svg" alt="빌리브 페이스북 아이콘"></a></li>
+                        <li><a href="#"><img src="./img/icon/ic-footer-instagram.svg" alt="빌리브 인스타그램 아이콘"></a></li>
+                        <li><a href="#"><img src="./img/icon/ic-footer-naver.svg" alt="빌리브 네이버 블로그 아이콘"></a></li>
+                        <li><a href="#"><img src="./img/icon/ic-footer-youtube.svg" alt="빌리브 유튜브 아이콘"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
 

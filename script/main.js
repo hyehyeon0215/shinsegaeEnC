@@ -13,7 +13,7 @@ const frames = visual.querySelectorAll(".frame li");
 const frame_name = visual.querySelectorAll(".frame-name li");
 
 
-const main_header = document.querySelector("#main-header");
+const main_header = document.querySelector("#header");
 const gnb = main_header.querySelectorAll("nav > .header-gnb >li");
 const sub = main_header.querySelectorAll(".header-sub > li");
 const bg = document.querySelector(".main-bg");
