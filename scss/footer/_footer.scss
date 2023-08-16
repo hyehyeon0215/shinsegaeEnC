@@ -51,7 +51,8 @@
             }
 
             p {
-                margin-top: 30px;
+                position: absolute;
+                bottom: 0;
                 font: 13px/1 'NotoSansKR';
                 color: #888;
             }
@@ -59,9 +60,10 @@
 
             #family-site {
                 position: absolute;
-                right: 0;
-                top: 0;
-
+                right: 40px;
+                bottom: 0;
+                padding: 0 15px;
+                font: 16px/1 'NotoSansKR';
             }
         }
 

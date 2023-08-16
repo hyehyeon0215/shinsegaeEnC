@@ -1,0 +1,178 @@
+.business-title {
+    position: relative;
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+
+    &::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 400px;
+        background-color: rgba(0,0,0,.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .title-txt {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+
+        >h2 {
+            font: bold 50px/1 'NotoSansKR';
+            color: #fff;
+            position: relative;
+
+            &::after {
+                display: block;
+                content: '';
+                width: 1px;
+                height: 50px;
+                margin: 20px 0 20px 5px;
+                background-color: #fff;
+                opacity: .7;
+            }
+        }
+
+        >p {
+            font: 20px/2 'NotoSansKR';
+            color: #fff;
+            position: relative;
+        }
+    }
+
+}
+
+.business-inner {
+    position: relative;
+    width: 80%;
+    height: auto;
+    min-height: 50vh;
+    margin: 0 auto;
+
+    .business-nav {
+        position: absolute;
+        width: 80%;
+        height: 70px;
+        background-color: #fff;
+        top: -35px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.2);
+
+        >p {
+            width: 200px;
+            height: 100%;
+            background-color: $mainColor;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font: bold 20px/1 'NotoSansKR';
+            color: #fff;
+            cursor: default;
+        }
+
+        >ul {
+            width: calc(100% - 200px);
+            display: flex;
+
+            >li {
+                flex: 1;
+                >a {
+                    display: flex;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    font: 20px/1 'NotoSansKR';
+                    border-right: 1px solid #eee;
+
+
+                    &.on {
+                        font-weight: bold;
+                    }
+
+                    &:hover {
+                        font-weight: bold;
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+
+    .business-content {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 150px 50px;
+
+        .main-content {
+            width: 100%;
+            height: 600px;
+            display: flex;
+
+            >.img {
+                flex: 1;
+                padding: 50px;
+                width: 100%;
+                height: 100%;
+
+                > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            >.txt {
+                flex: 1;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                >p {
+                    &:nth-of-type(1) {
+                        font: bold 40px/1 'NotoSansKR';
+
+                        &::after {
+                            display: block;
+                            content: '';
+                            width: 2px;
+                            height: 100px;
+                            margin: 15px 0 10px 10px;
+                            background-color: $mainColor;
+                            opacity: .5;
+                        }
+
+                        >span {
+                            font-size: 26px;
+                            color: $subColor;
+                            margin-left: 20px;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        font: 18px/1.5 'NotoSansKR';
+                    }
+                }
+            }
+        }
+    }
+
+}
