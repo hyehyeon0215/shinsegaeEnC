@@ -6,13 +6,6 @@ const bg = document.querySelector(".main-bg");
 const search_btn = document.querySelector(".search-btn");
 const search_cls = document.querySelector(".search-close");
 
-window.addEventListener("scroll", () => {
-    if (window.pageYOffset > scroll_section[1].offsetTop - 10) {
-        main_header.classList.add('white');
-    } else {
-        main_header.classList.remove('white');
-    }
-})
 
 gnb.forEach((el)=>{
     el.addEventListener("mouseenter", ()=>{
