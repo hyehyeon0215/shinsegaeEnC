@@ -43,3 +43,5 @@ search_cls.addEventListener("click", (e)=>{
     main_header.classList.remove('search');
     bg.classList.remove('on');
 })
+
+

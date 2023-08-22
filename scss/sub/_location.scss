@@ -1,0 +1,191 @@
+#sub-location {
+    width: 100%;
+    position: relative;
+
+    .map-wrap {
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        display: flex;
+        margin-bottom: 100px;
+        position: relative;
+
+        #map {
+            width: 60%;
+            position: relative;
+
+        }
+
+        .map-txt {
+            width: 40%;
+            height: 100%;
+            padding: 30px 0px 30px 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            >h3 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 30px;
+
+                >p {
+                    font: bold 28px/1 'NotoSansKR';
+                    color: $mainColor;
+
+                    &:last-of-type {
+                        font: bold 20px/1 'NotoSansKR';
+                        color: $subColor;
+                    }
+
+                    >i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    
+    .publictransport-wrap {
+        width: 90%;
+        margin: 0 auto;
+
+        >ul {
+           
+            >li{
+                position: relative;
+
+                &.bus {
+                    margin: 100px 0;
+                    font: bold 30px/1 'NotoSans';
+                    
+                    >ul {
+                        margin: 50px 0;
+                        >li {
+                            margin: 50px 0;
+                            font: 24px/1 'NotoSans';
+                            background-color: #f8f8f8;
+                            border-radius: 10px;
+                            padding: 20px;
+
+                            >ul {
+                                display: flex;
+                                gap: 25px;
+                                margin-top: 20px;
+    
+                                >li {
+                                    padding: 5px 0;
+                                    font: 20px/1 'NotoSans';
+                                    color: $subColor;
+
+                                    &:first-of-type {
+                                        padding: 5px 15px;
+                                        color: #fff;
+                                        border-radius: 5px;
+                                    }
+
+                                    &.back-b {
+                                        background-color: #2B75E4;
+                                    }
+
+                                    &.back-y {
+                                        background-color: #F0BF12;
+                                    }
+
+                                    &.back-r {
+                                        background-color: #DC2B20;
+                                    }
+
+                                    &.back-g {
+                                        background-color: #4BAA11;
+                                    }
+
+                                    &.back-lg {
+                                        background-color: #A0CA5B;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &.subway {
+                    margin: 100px 0;
+                    font: bold 30px/1 'NotoSans';
+                    
+                    >ul {
+                        margin: 50px 0;
+                        >li {
+                            margin: 50px 0;
+                            font: 24px/1 'NotoSans';
+                            background-color: #f8f8f8;
+                            border-radius: 10px;
+                            padding: 20px;
+
+                            >ul {
+                                margin-top: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+    
+                                >li {
+                                    display: flex;
+                                    gap: 20px;
+
+
+                                    >p {
+                                        font: 20px/1 'NotoSans';
+                                        padding: 5px 15px;
+                                        color: #fff;
+                                        border-radius: 5px;
+
+                                        &.line1 {
+                                            background-color: #263C96;
+                                        }
+    
+                                        &.line2 {
+                                            background-color: #3CB44A;
+                                        }
+    
+                                        &.line4 {
+                                            background-color: #2C9EDE;
+                                        }
+    
+                                        &.lineg1 {
+                                            background-color: #7CC4A5;
+                                        }
+    
+                                        &.lineg2 {
+                                            background-color: #69A5D1;
+                                        }
+
+                                    }
+
+                                    >span {
+                                        font: 18px/30px 'NotoSansKR';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &::before {
+                    display: block;
+                    content: '';
+                    background-image: url('../../img/logo/color.svg');
+                    width: 90px;
+                    height: 30px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+}

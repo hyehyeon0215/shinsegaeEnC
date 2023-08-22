@@ -299,6 +299,159 @@ a {
     opacity: 1;
   }
 }
+#sub-location {
+  width: 100%;
+  position: relative;
+}
+#sub-location .map-wrap {
+  width: 90%;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 100px;
+  position: relative;
+}
+#sub-location .map-wrap #map {
+  width: 60%;
+  position: relative;
+}
+#sub-location .map-wrap .map-txt {
+  width: 40%;
+  height: 100%;
+  padding: 30px 0px 30px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#sub-location .map-wrap .map-txt > h3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+#sub-location .map-wrap .map-txt > h3 > p {
+  font: bold 28px/1 "NotoSansKR";
+  color: #DA2128;
+}
+#sub-location .map-wrap .map-txt > h3 > p:last-of-type {
+  font: bold 20px/1 "NotoSansKR";
+  color: #4F5959;
+}
+#sub-location .map-wrap .map-txt > h3 > p > i {
+  margin-right: 10px;
+}
+#sub-location .publictransport-wrap {
+  width: 90%;
+  margin: 0 auto;
+}
+#sub-location .publictransport-wrap > ul > li {
+  position: relative;
+}
+#sub-location .publictransport-wrap > ul > li.bus {
+  margin: 100px 0;
+  font: bold 30px/1 "NotoSans";
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul {
+  margin: 50px 0;
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul > li {
+  margin: 50px 0;
+  font: 24px/1 "NotoSans";
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul > li > ul {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li {
+  padding: 5px 0;
+  font: 20px/1 "NotoSans";
+  color: #4F5959;
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li:first-of-type {
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-b {
+  background-color: #2B75E4;
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-y {
+  background-color: #F0BF12;
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-r {
+  background-color: #DC2B20;
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-g {
+  background-color: #4BAA11;
+}
+#sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-lg {
+  background-color: #A0CA5B;
+}
+#sub-location .publictransport-wrap > ul > li.subway {
+  margin: 100px 0;
+  font: bold 30px/1 "NotoSans";
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul {
+  margin: 50px 0;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li {
+  margin: 50px 0;
+  font: 24px/1 "NotoSans";
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li > ul {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li {
+  display: flex;
+  gap: 20px;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p {
+  font: 20px/1 "NotoSans";
+  padding: 5px 15px;
+  color: #fff;
+  border-radius: 5px;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p.line1 {
+  background-color: #263C96;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p.line2 {
+  background-color: #3CB44A;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p.line4 {
+  background-color: #2C9EDE;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p.lineg1 {
+  background-color: #7CC4A5;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p.lineg2 {
+  background-color: #69A5D1;
+}
+#sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > span {
+  font: 18px/30px "NotoSansKR";
+}
+#sub-location .publictransport-wrap > ul > li::before {
+  display: block;
+  content: "";
+  background-image: url("../../img/logo/color.svg");
+  width: 90px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .business-title {
   position: relative;
   margin-top: 100px;
@@ -584,6 +737,109 @@ a {
 }
 .business-inner .business-content .business-list .img-list.list-ul > li:hover > a > p {
   color: #fff;
+}
+
+.sub-inner {
+  width: 100%;
+  height: auto;
+  padding: 150px 0 100px;
+}
+.sub-inner .sub-nav {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #DA2128;
+  z-index: 2;
+}
+.sub-inner .sub-nav > ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.sub-inner .sub-nav > ul > li {
+  max-width: auto;
+  height: 50px;
+}
+.sub-inner .sub-nav > ul > li > a {
+  display: flex;
+  width: auto;
+  height: 50px;
+  text-align: left;
+  align-items: center;
+  font: 16px/1 "NotoSansKR";
+  color: #fff;
+  cursor: default;
+}
+.sub-inner .sub-nav > ul > li > a::after {
+  display: block;
+  cursor: default;
+  content: ">";
+  margin: 0 20px;
+}
+.sub-inner .sub-nav > ul > li:nth-of-type(1) > a {
+  cursor: pointer;
+  margin-left: 40px;
+}
+.sub-inner .sub-nav > ul > li:nth-of-type(3) > a {
+  cursor: pointer;
+}
+.sub-inner .sub-nav > ul > li:nth-of-type(3) > a::after {
+  display: none;
+}
+.sub-inner .sub-nav > ul > li > ul {
+  visibility: hidden;
+  background-color: #4F5959;
+  padding: 20px;
+  border-radius: 0px;
+  opacity: 0;
+  transition: 0.3s;
+}
+.sub-inner .sub-nav > ul > li > ul > li {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  color: #ddd;
+  font: 16px/1 "NotoSansKR";
+  border-bottom: 0.5px solid #777;
+}
+.sub-inner .sub-nav > ul > li > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  color: #fff;
+  font-weight: bold;
+}
+.sub-inner .sub-nav > ul > li > ul > li:last-of-type {
+  border-bottom: none;
+}
+.sub-inner .sub-nav > ul > li > ul.on {
+  visibility: visible;
+  opacity: 1;
+}
+.sub-inner .sub-content {
+  width: 80%;
+  margin: 0 auto;
+}
+.sub-inner .sub-content .sub-title {
+  width: 100%;
+  height: 250px;
+  padding: 100px 50px 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 2px solid #DA2128;
+}
+.sub-inner .sub-content .sub-title > h2 {
+  font: bold 50px/1 "NotoSansKR";
+}
+.sub-inner .sub-content .sub-title > p {
+  font: 18px/1 "NotoSansKR";
 }
 
 #sitemap {
@@ -1096,6 +1352,7 @@ a {
 }
 
 #footer {
+  position: relative;
   overflow: hidden;
   width: 100%;
   height: 200px;
