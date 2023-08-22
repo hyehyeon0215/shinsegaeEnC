@@ -1,0 +1,169 @@
+#sub-history {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+
+    .history-nav {
+        width: 100%;
+        height: 70px;
+        position: relative;
+
+        .progress-bar {
+            display: none;
+        }
+
+
+        >ul {
+            position: absolute;
+            bottom: 110px;
+            width: 100%;
+            height: 3px;
+            background-color: $mainColor;
+            display: flex;
+            justify-content: space-evenly;
+            z-index: 3;
+
+            >li {
+                position: relative;
+                
+
+                >a {
+                    >span {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        background-color: #c71a20;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        border-radius: 50%;
+                        border: 5px solid $mainColor;
+                    }
+
+                    >p {
+                        position: absolute;
+                        top: 30px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 100px;
+                        text-align: center;
+                        font: 18px/1 'NotoSansKR';
+                    }
+                }
+
+                &.on {
+                    >a {
+                        >span {
+                            background-color: #fff;
+                        }
+                        >p {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.fixed {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background-color: $mainColor;
+
+            .progress-bar {
+                display: block;
+                width: 40%;
+                height: 100%;
+                margin: 0 auto;
+                position: relative;
+
+                >div {
+                    position: absolute;
+                    height: 3px;
+                    left: 0;
+                    top: 45%;
+
+                    &.progress-bar1 {
+                        z-index: 1;
+                        background-color: #fff;
+                        width: 100%;
+                    }
+
+                    &.progress-bar2 {
+                        z-index: 2;
+                        background-color: $subColor;
+                    }
+                }
+            }
+
+
+            >ul {
+                width: 40%;
+                left: 50%;
+                top: 45%;
+                height: 0;
+                transform: translateX(-50%);
+                background-color: inherit;
+                justify-content: initial;
+
+                >li {
+                    flex: 1;
+
+                    >a {
+                        >span {
+                            left: 0;
+                            background-color: #ddd;
+                            border: 5px solid #fff;
+                        }
+    
+                        >p {
+                            left: 0;
+                            color: #fff;
+                        }
+                    }
+
+                    &.on {
+                        >a {
+                            >span {
+                                background-color: $subColor;
+                            }
+                        }
+                    }
+                }
+
+                &::after {
+                    display: block;
+                    content: '';
+                    background-image: url('../../img/logo/white.svg');
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    right: -50px;
+                    top: -25px
+                }
+
+                &.end {
+                    &::after {
+                        background-image: url('../../img/logo/black.svg');
+                    }
+                }
+            }
+
+        }
+    }
+
+    .history-wrap {
+        width: 100%;
+        height: auto;
+        padding: 150px;
+        background-color: #ddd;
+
+        >div {
+            width: 100%;
+            height: 200vh;
+        }
+    }
+}

@@ -358,10 +358,10 @@ a {
 }
 #sub-location .publictransport-wrap > ul > li.bus > ul > li {
   margin: 50px 0;
-  font: 24px/1 "NotoSans";
+  font: bold 22px/1 "NotoSans";
   background-color: #f8f8f8;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 30px;
 }
 #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul {
   display: flex;
@@ -370,7 +370,7 @@ a {
 }
 #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li {
   padding: 5px 0;
-  font: 20px/1 "NotoSans";
+  font: 18px/1 "NotoSans";
   color: #4F5959;
 }
 #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li:first-of-type {
@@ -402,10 +402,10 @@ a {
 }
 #sub-location .publictransport-wrap > ul > li.subway > ul > li {
   margin: 50px 0;
-  font: 24px/1 "NotoSans";
+  font: bold 22px/1 "NotoSans";
   background-color: #f8f8f8;
   border-radius: 10px;
-  padding: 20px;
+  padding: 20px 30px;
 }
 #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul {
   margin-top: 20px;
@@ -418,7 +418,7 @@ a {
   gap: 20px;
 }
 #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p {
-  font: 20px/1 "NotoSans";
+  font: 18px/1 "NotoSans";
   padding: 5px 15px;
   color: #fff;
   border-radius: 5px;
@@ -751,7 +751,7 @@ a {
   width: 100%;
   height: 50px;
   background-color: #DA2128;
-  z-index: 2;
+  z-index: 4;
 }
 .sub-inner .sub-nav > ul {
   display: flex;
@@ -840,6 +840,140 @@ a {
 }
 .sub-inner .sub-content .sub-title > p {
   font: 18px/1 "NotoSansKR";
+}
+.sub-inner .sub-content .sub-title.history-title {
+  border-bottom: none;
+}
+
+#sub-history {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+#sub-history .history-nav {
+  width: 100%;
+  height: 70px;
+  position: relative;
+}
+#sub-history .history-nav .progress-bar {
+  display: none;
+}
+#sub-history .history-nav > ul {
+  position: absolute;
+  bottom: 110px;
+  width: 100%;
+  height: 3px;
+  background-color: #DA2128;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 3;
+}
+#sub-history .history-nav > ul > li {
+  position: relative;
+}
+#sub-history .history-nav > ul > li > a > span {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: #c71a20;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 5px solid #DA2128;
+}
+#sub-history .history-nav > ul > li > a > p {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  text-align: center;
+  font: 18px/1 "NotoSansKR";
+}
+#sub-history .history-nav > ul > li.on > a > span {
+  background-color: #fff;
+}
+#sub-history .history-nav > ul > li.on > a > p {
+  font-weight: bold;
+}
+#sub-history .history-nav.fixed {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #DA2128;
+}
+#sub-history .history-nav.fixed .progress-bar {
+  display: block;
+  width: 40%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#sub-history .history-nav.fixed .progress-bar > div {
+  position: absolute;
+  height: 3px;
+  left: 0;
+  top: 45%;
+}
+#sub-history .history-nav.fixed .progress-bar > div.progress-bar1 {
+  z-index: 1;
+  background-color: #fff;
+  width: 100%;
+}
+#sub-history .history-nav.fixed .progress-bar > div.progress-bar2 {
+  z-index: 2;
+  background-color: #4F5959;
+}
+#sub-history .history-nav.fixed > ul {
+  width: 40%;
+  left: 50%;
+  top: 45%;
+  height: 0;
+  transform: translateX(-50%);
+  background-color: inherit;
+  justify-content: initial;
+}
+#sub-history .history-nav.fixed > ul > li {
+  flex: 1;
+}
+#sub-history .history-nav.fixed > ul > li > a > span {
+  left: 0;
+  background-color: #ddd;
+  border: 5px solid #fff;
+}
+#sub-history .history-nav.fixed > ul > li > a > p {
+  left: 0;
+  color: #fff;
+}
+#sub-history .history-nav.fixed > ul > li.on > a > span {
+  background-color: #4F5959;
+}
+#sub-history .history-nav.fixed > ul::after {
+  display: block;
+  content: "";
+  background-image: url("../../img/logo/white.svg");
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: -50px;
+  top: -25px;
+}
+#sub-history .history-nav.fixed > ul.end::after {
+  background-image: url("../../img/logo/black.svg");
+}
+#sub-history .history-wrap {
+  width: 100%;
+  height: auto;
+  padding: 150px;
+  background-color: #ddd;
+}
+#sub-history .history-wrap > div {
+  width: 100%;
+  height: 200vh;
 }
 
 #sitemap {

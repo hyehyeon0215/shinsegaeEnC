@@ -68,10 +68,10 @@
                         margin: 50px 0;
                         >li {
                             margin: 50px 0;
-                            font: 24px/1 'NotoSans';
+                            font: bold 22px/1 'NotoSans';
                             background-color: #f8f8f8;
                             border-radius: 10px;
-                            padding: 20px;
+                            padding: 20px 30px;
 
                             >ul {
                                 display: flex;
@@ -80,7 +80,7 @@
     
                                 >li {
                                     padding: 5px 0;
-                                    font: 20px/1 'NotoSans';
+                                    font: 18px/1 'NotoSans';
                                     color: $subColor;
 
                                     &:first-of-type {
@@ -122,10 +122,10 @@
                         margin: 50px 0;
                         >li {
                             margin: 50px 0;
-                            font: 24px/1 'NotoSans';
+                            font: bold 22px/1 'NotoSans';
                             background-color: #f8f8f8;
                             border-radius: 10px;
-                            padding: 20px;
+                            padding: 20px 30px;
 
                             >ul {
                                 margin-top: 20px;
@@ -139,7 +139,7 @@
 
 
                                     >p {
-                                        font: 20px/1 'NotoSans';
+                                        font: 18px/1 'NotoSans';
                                         padding: 5px 15px;
                                         color: #fff;
                                         border-radius: 5px;
