@@ -116,20 +116,20 @@
 
     .business-content {
         position: relative;
-        width: 100%;
+        margin: 0 auto;
+        width: 80%;
         height: auto;
         padding: 150px 0px;
 
         .main-content {
-            margin-left: 100px;
             width: 100%;
-            height: 600px;
+            height: 500px;
             display: flex;
             gap: 50px;
 
             >.img {
                 flex: 1;
-                padding: 50px 0px;
+                // padding: 50px 0px;
                 width: 100%;
                 height: 100%;
 
@@ -150,7 +150,7 @@
 
                 >p {
                     &:nth-of-type(1) {
-                        font: bold 40px/1 'NotoSansKR';
+                        font: bold 36px/1 'NotoSansKR';
 
                         &::after {
                             display: block;
@@ -163,7 +163,7 @@
                         }
 
                         >span {
-                            font-size: 26px;
+                            font-size: 20px;
                             color: $subColor;
                             margin-left: 20px;
                         }
@@ -177,7 +177,7 @@
         }
 
         .business-list {
-            width: 90%;
+            width: 100%;
             margin: 0 auto;
 
             .icon-list {
@@ -187,7 +187,7 @@
                 justify-content: end;
                 align-items: center;
                 gap: 15px;
-                margin-bottom: 50px;
+                margin-top: 50px;
 
                 >li {
                     width: 20px;
@@ -259,7 +259,7 @@
 
             .img-list {
                 &.grid {
-                    width: 90%;
+                    width: 100%;
                     margin: 0 auto;
                     display: flex;
                     overflow: hidden;

@@ -306,9 +306,8 @@ a {
 #sub-location .map-wrap {
   width: 90%;
   height: 500px;
-  margin: 0 auto;
+  margin: 100px auto;
   display: flex;
-  margin-bottom: 100px;
   position: relative;
 }
 #sub-location .map-wrap #map {
@@ -330,6 +329,7 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 30px;
+  border-bottom: 1px solid #eee;
 }
 #sub-location .map-wrap .map-txt > h3 > p {
   font: bold 28px/1 "NotoSansKR";
@@ -342,35 +342,40 @@ a {
 #sub-location .map-wrap .map-txt > h3 > p > i {
   margin-right: 10px;
 }
+#sub-location .map-wrap .map-txt > h3:last-of-type {
+  border-bottom: none;
+}
 #sub-location .publictransport-wrap {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 #sub-location .publictransport-wrap > ul > li {
   position: relative;
 }
 #sub-location .publictransport-wrap > ul > li.bus {
-  margin: 100px 0;
-  font: bold 30px/1 "NotoSans";
+  margin: 150px 0;
+  font: bold 26px/1 "NotoSansKR";
 }
 #sub-location .publictransport-wrap > ul > li.bus > ul {
   margin: 50px 0;
 }
 #sub-location .publictransport-wrap > ul > li.bus > ul > li {
   margin: 50px 0;
-  font: bold 22px/1 "NotoSans";
+  font: bold 20px/1 "NotoSansKR";
   background-color: #f8f8f8;
   border-radius: 10px;
   padding: 20px 30px;
 }
 #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul {
+  border-bottom: 0.5px solid #eee;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   margin-top: 20px;
 }
 #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li {
   padding: 5px 0;
-  font: 18px/1 "NotoSans";
+  font: 16px/1 "NotoSansKR";
   color: #4F5959;
 }
 #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li:first-of-type {
@@ -394,15 +399,12 @@ a {
   background-color: #A0CA5B;
 }
 #sub-location .publictransport-wrap > ul > li.subway {
-  margin: 100px 0;
-  font: bold 30px/1 "NotoSans";
-}
-#sub-location .publictransport-wrap > ul > li.subway > ul {
-  margin: 50px 0;
+  margin: 100px 0 50px;
+  font: bold 26px "NotoSansKR";
 }
 #sub-location .publictransport-wrap > ul > li.subway > ul > li {
   margin: 50px 0;
-  font: bold 22px/1 "NotoSans";
+  font: bold 20px/1 "NotoSansKR";
   background-color: #f8f8f8;
   border-radius: 10px;
   padding: 20px 30px;
@@ -415,11 +417,13 @@ a {
 }
 #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
+  border-bottom: 0.5px solid #eee;
 }
 #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p {
-  font: 18px/1 "NotoSans";
-  padding: 5px 15px;
+  font: 16px/1.5 "NotoSansKR";
+  padding: 5px 10px;
   color: #fff;
   border-radius: 5px;
 }
@@ -439,7 +443,7 @@ a {
   background-color: #69A5D1;
 }
 #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > span {
-  font: 18px/30px "NotoSansKR";
+  font: 16px/30px "NotoSansKR";
 }
 #sub-location .publictransport-wrap > ul > li::before {
   display: block;
@@ -557,20 +561,19 @@ a {
 }
 .business-inner .business-content {
   position: relative;
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   height: auto;
   padding: 150px 0px;
 }
 .business-inner .business-content .main-content {
-  margin-left: 100px;
   width: 100%;
-  height: 600px;
+  height: 500px;
   display: flex;
   gap: 50px;
 }
 .business-inner .business-content .main-content > .img {
   flex: 1;
-  padding: 50px 0px;
   width: 100%;
   height: 100%;
 }
@@ -588,7 +591,7 @@ a {
   justify-content: center;
 }
 .business-inner .business-content .main-content > .txt > p:nth-of-type(1) {
-  font: bold 40px/1 "NotoSansKR";
+  font: bold 36px/1 "NotoSansKR";
 }
 .business-inner .business-content .main-content > .txt > p:nth-of-type(1)::after {
   display: block;
@@ -600,7 +603,7 @@ a {
   opacity: 0.5;
 }
 .business-inner .business-content .main-content > .txt > p:nth-of-type(1) > span {
-  font-size: 26px;
+  font-size: 20px;
   color: #4F5959;
   margin-left: 20px;
 }
@@ -608,7 +611,7 @@ a {
   font: 18px/1.5 "NotoSansKR";
 }
 .business-inner .business-content .business-list {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 .business-inner .business-content .business-list .icon-list {
@@ -618,7 +621,7 @@ a {
   justify-content: end;
   align-items: center;
   gap: 15px;
-  margin-bottom: 50px;
+  margin-top: 50px;
 }
 .business-inner .business-content .business-list .icon-list > li {
   width: 20px;
@@ -665,7 +668,7 @@ a {
   color: #DA2128;
 }
 .business-inner .business-content .business-list .img-list.grid {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   overflow: hidden;
@@ -973,7 +976,7 @@ a {
 }
 #sub-history .history-wrap > div {
   width: 100%;
-  height: 200vh;
+  height: 100vh;
 }
 
 #sitemap {
