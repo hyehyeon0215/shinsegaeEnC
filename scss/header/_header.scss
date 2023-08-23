@@ -175,7 +175,7 @@
                 color: $subColor;
     
                 &::before {
-                    background-image: url(../img/logo/color.svg);
+                    background-image: url("../img/logo/color.svg");
                 }
             }
     
@@ -273,7 +273,7 @@
             a {
                 color: $subColor;
                 &::before {
-                    background-image: url(../../img/logo/color.svg);
+                    background-image: url("../../img/logo/color.svg");
                 }
             }
     
@@ -346,7 +346,7 @@
                 &::before {
                     width: 40px;
                     height: 40px;
-                    background-image: url(../img/logo/color.svg);
+                    background-image: url("../img/logo/color.svg");
                 }
             }
     
