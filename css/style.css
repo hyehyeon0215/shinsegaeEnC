@@ -1218,13 +1218,13 @@ a {
 #header h1 a::before {
   display: block;
   content: "";
-  background-image: url(../../img/logo/white.svg);
+  background-image: url("../img/logo/white.svg");
   background-size: cover;
   width: 40px;
   height: 40px;
 }
 #header h1.main-logo a::before {
-  background-image: url(../../img/logo/white.svg);
+  background-image: url("../img/logo/white.svg");
 }
 #header nav .header-gnb {
   display: flex;
@@ -1325,7 +1325,7 @@ a {
   color: #4F5959;
 }
 #header.on h1 a::before {
-  background-image: url(../img/logo/color.svg);
+  background-image: url("../img/logo/color.svg");
 }
 #header.on nav .header-gnb > li {
   width: 160px;
@@ -1390,7 +1390,7 @@ a {
   color: #4F5959;
 }
 #header.white h1 a::before {
-  background-image: url(../../img/logo/color.svg);
+  background-image: url("../img/logo/color.svg");
 }
 #header.white nav .header-gnb > li > a {
   color: #4F5959;
@@ -1439,7 +1439,7 @@ a {
 #header.search h1 a::before {
   width: 40px;
   height: 40px;
-  background-image: url(../img/logo/color.svg);
+  background-image: url("../img/logo/color.svg");
 }
 #header.search nav {
   display: none;

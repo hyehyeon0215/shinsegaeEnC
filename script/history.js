@@ -42,7 +42,6 @@ window.addEventListener("scroll", ()=> {
         }
         else {
             history_li[index].classList.remove("on");
-            history_li[0].classList.add("on");
         }
     })
 
