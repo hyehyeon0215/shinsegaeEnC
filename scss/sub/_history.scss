@@ -8,11 +8,6 @@
         height: 70px;
         position: relative;
 
-        .progress-bar {
-            display: none;
-        }
-
-
         >ul {
             position: absolute;
             bottom: 110px;
@@ -25,7 +20,6 @@
 
             >li {
                 position: relative;
-                
 
                 >a {
                     >span {
@@ -71,43 +65,18 @@
             left: 0;
             width: 100%;
             height: 150px;
-            background-color: $mainColor;
-
-            .progress-bar {
-                display: block;
-                width: 40%;
-                height: 100%;
-                margin: 0 auto;
-                position: relative;
-
-                >div {
-                    position: absolute;
-                    height: 3px;
-                    left: 0;
-                    top: 45%;
-
-                    &.progress-bar1 {
-                        z-index: 1;
-                        background-color: #fff;
-                        width: 100%;
-                    }
-
-                    &.progress-bar2 {
-                        z-index: 2;
-                        background-color: $subColor;
-                    }
-                }
-            }
-
+            z-index: 3;
+            background-color: $subColor;
 
             >ul {
                 width: 40%;
                 left: 50%;
                 top: 45%;
-                height: 0;
+                height: 3px;
                 transform: translateX(-50%);
-                background-color: inherit;
                 justify-content: initial;
+                background-color: #fff;
+
 
                 >li {
                     flex: 1;
@@ -128,7 +97,7 @@
                     &.on {
                         >a {
                             >span {
-                                background-color: $subColor;
+                                background-color: $mainColor;
                             }
                         }
                     }
@@ -147,7 +116,7 @@
 
                 &.end {
                     &::after {
-                        background-image: url('../../img/logo/black.svg');
+                        background-image: url('../../img/logo/color.svg');
                     }
                 }
             }
@@ -156,14 +125,80 @@
     }
 
     .history-wrap {
-        width: 100%;
+        width: 80%;
         height: auto;
-        padding: 150px;
-        background-color: #ddd;
+        margin: 0 auto;
 
         >div {
             width: 100%;
-            height: 100vh;
+            height: auto;
+            padding: 100px 0 0;
+
+            >ul {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 100px;
+                position: relative;
+
+                >li {
+
+                    &:nth-of-type(1) {
+                        flex: 1;
+
+                        >h3 {
+                            font: bold 50px/1 'NotoSansKR';
+                            text-align: left;
+                            display: flex;
+                            justify-content: center;
+                            align-items: start;
+                        }
+                    }
+
+                    &:nth-of-type(2) {
+                        flex: 1.5;
+
+                        >ul {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 30px;
+
+                            >li {
+                                >p {
+                                    font: 20px/2 "NotoSansKR";
+
+                                    >span {
+                                        font-weight: bold;
+                                        display: inline-block;
+                                        margin-right: 20px;
+                                        color: $mainColor;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &::after {
+                    display: block;
+                    content: '';
+                    width: 80%;
+                    height: 1px;
+                    background-color: #eee;
+                    position: absolute;
+                    left: 50%;
+                    bottom: -50px;
+                    transform: translateX(-50%);
+                }
+
+                &:last-of-type {
+                    &::after {
+                        display: none;
+                    }
+                }
+
+            }
         }
     }
 }
