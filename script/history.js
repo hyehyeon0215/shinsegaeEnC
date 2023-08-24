@@ -20,7 +20,7 @@ window.addEventListener("scroll", ()=> {
         history_li[0].classList.add("on");
     }
 
-    if(window.pageYOffset > history_content[history_content.length - 1].offsetTop + 1000) {
+    if(window.pageYOffset > (history_content[history_content.length - 1].offsetTop + 2000)) {
         history_ul.classList.add("end");
     }
     else {
