@@ -448,7 +448,7 @@ a {
 #sub-location .publictransport-wrap > ul > li::before {
   display: block;
   content: "";
-  background-image: url("../../img/logo/color.svg");
+  background-image: url("../img/logo/color.svg");
   width: 90px;
   height: 30px;
   position: absolute;
@@ -934,7 +934,7 @@ a {
 #sub-history .history-nav.fixed > ul::after {
   display: block;
   content: "";
-  background-image: url("../../img/logo/white.svg");
+  background-image: url("../img/logo/white.svg");
   width: 50px;
   height: 50px;
   position: absolute;
@@ -942,7 +942,7 @@ a {
   top: -25px;
 }
 #sub-history .history-nav.fixed > ul.end::after {
-  background-image: url("../../img/logo/color.svg");
+  background-image: url("../img/logo/color.svg");
 }
 #sub-history .history-wrap {
   width: 80%;
@@ -967,6 +967,7 @@ a {
 }
 #sub-history .history-wrap > div > ul > li:nth-of-type(1) > h3 {
   font: bold 50px/1 "NotoSansKR";
+  color: #4F5959;
   text-align: left;
   display: flex;
   justify-content: center;
@@ -1057,7 +1058,7 @@ a {
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
-  background-image: url("../../img/logo/white.svg");
+  background-image: url("../img/logo/white.svg");
   background-size: cover;
   cursor: pointer;
   animation: rotate 30s linear infinite;
