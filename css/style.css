@@ -1005,6 +1005,81 @@ a {
   display: none;
 }
 
+#sub-vision {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+#sub-vision > div {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-bottom: 200px;
+}
+#sub-vision > div > span {
+  display: block;
+  font: bold 20px/1 "NotoSansKR";
+  margin-left: 70px;
+  margin-bottom: 30px;
+  position: relative;
+}
+#sub-vision > div > span::before {
+  display: block;
+  content: "";
+  background-image: url("../img/logo/color.svg");
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  left: -70px;
+}
+#sub-vision > div.content1 {
+  margin-top: 200px;
+}
+#sub-vision > div.content1 > h2 {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: 45px/2 "NotoSansKR";
+}
+#sub-vision > div.content1 > h2::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background-image: url("../img/logo/color.svg");
+  width: 30%;
+  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+}
+#sub-vision > div.content2 > h2 {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font: bold 45px/2 "NotoSansKR";
+  color: #DA2128;
+}
+#sub-vision > div.content2 > p {
+  font: 18px/2 "NotoSansKR";
+}
+#sub-vision > div.content3 {
+  padding-top: 50px;
+}
+#sub-vision > div.content3 > img {
+  margin-top: 100px;
+  width: 100%;
+  object-fit: cover;
+}
+
 #sitemap {
   width: 100%;
   height: 100vh;
