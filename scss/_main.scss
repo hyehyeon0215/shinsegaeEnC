@@ -96,6 +96,24 @@
     width: 100%;
     height: 100vh;
 
+    >h2 {
+        position: absolute;
+        left: 15%;
+        top: 20%;
+        font: 24px/1 'NotoSansKR';
+        color: $subColor;
+
+        &::before {
+            display: inline-block;
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-image: url('/img/logo/color.svg');
+            background-size: cover;
+            margin-right: 10px;
+        }
+    }
+
     .frame-index {
         position: absolute;
         top: -50px;
@@ -113,7 +131,6 @@
             flex: 1;
             width: 100%;
             height: 60%;
-            // background-color: rgba($color: $mainColor, $alpha: .9);
             background-color: $mainColor;
             padding-top: 30px;
             display: flex;
@@ -169,7 +186,7 @@
         }
 
         &.on {
-            top: 30%;
+            top: 35%;
             left: 50%;
             width: 70vw;
             height: 100px;
@@ -202,10 +219,10 @@
     .field-img {
         position: absolute;
         display: flex;
-        top: 20%;
+        top: 25%;
         left: 50%;
         width: 70vw;
-        height: 50vh;
+        height: 45vh;
         transform: translateX(-50%);
         margin-top: 150px;
         gap: 20px;
@@ -307,7 +324,109 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: antiquewhite;
+    overflow: hidden;
+
+    >h2 {
+        position: absolute;
+        left: 15%;
+        top: 20%;
+        font: 24px/1 'NotoSansKR';
+        color: $subColor;
+
+        &::before {
+            display: inline-block;
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-image: url('/img/logo/color.svg');
+            background-size: cover;
+            margin-right: 10px;
+        }
+    }
+
+    >article {
+        width: 70%;
+        height: auto;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        >.news-nav {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            
+            >li {
+                >a {
+                    display: block;
+                    width: 150px;
+                    height: 40px;
+                    text-align: center;
+                    font: bold 20px/40px 'NotoSansKR';
+                }
+
+                &.on {
+                    >a {
+                        color: $mainColor;
+
+                        &::after {
+                            display: block;
+                            content: '';
+                            width: 100%;
+                            height: 5px;
+                            background-color: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.news-list {
+            margin-top: 50px;
+            width: 100%;
+            height: 500px;
+
+            >li {
+                display: none;
+                width: auto;
+                height: 100%;
+
+
+                >ul{
+                    width: calc(100%);
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+
+                    >li {
+                        width: calc(100%/3 - 20px);
+                        height: 50%;
+
+                        .img {
+                            width: 100%;
+                            height: 60%;
+                            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                    }
+                }
+
+                &.on {
+                    display: flex;
+                }
+            }
+
+        }
+    }
+
 }
 
 #villiv {
