@@ -405,6 +405,7 @@
                     >li {
                         width: calc(100%/3 - 20px);
                         height: 50%;
+                        cursor: pointer;
 
                         .img {
                             width: 100%;
@@ -414,6 +415,25 @@
                                 width: 100%;
                                 height: 100%;
                                 object-fit: cover;
+                            }
+                        }
+
+                        .txt {
+                            width: 100%;
+                            margin-top: 20px;
+
+                            >p {
+                                font: 18px/1 'NotoSansKR';
+                                width: 100%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+
+                            >span {
+                                display: block;
+                                color: #aaa;
+                                margin-top: 5px;
                             }
                         }
                     }

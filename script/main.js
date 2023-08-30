@@ -26,6 +26,10 @@ const search_cls = document.querySelector(".search-close");
 const interval = 5000;
 const len = frames.length - 1;
 
+const news_nav = document.querySelectorAll(".news-nav > li");
+const news_list = document.querySelectorAll(".news-list > li");
+
+
 let num = 0;
 let timer = null;
 
@@ -183,3 +187,16 @@ function field_counting() {
     })
 }
 
+news_nav.forEach((el, index)=>{
+    el.addEventListener("click", (e)=>{
+        e.preventDefault();
+        news_nav.forEach((el)=> {
+            el.classList.remove('on');
+        });
+        news_list.forEach((el)=> {
+            el.classList.remove('on');
+        });
+        news_nav[index].classList.add('on');
+        news_list[index].classList.add('on');
+    })
+})
