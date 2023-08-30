@@ -108,7 +108,7 @@
             content: '';
             width: 18px;
             height: 18px;
-            background-image: url('/img/logo/color.svg');
+            background-image: url('./img/logo/color.svg');
             background-size: cover;
             margin-right: 10px;
         }
@@ -338,7 +338,7 @@
             content: '';
             width: 18px;
             height: 18px;
-            background-image: url('/img/logo/color.svg');
+            background-image: url('./img/logo/color.svg');
             background-size: cover;
             margin-right: 10px;
         }
@@ -453,6 +453,48 @@
     position: relative;
     width: 100%;
     height: 100vh;
+    background-image: url('../img/visual/main_villiv\ 백그라운드.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    &::after {
+        display: block;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    >.villiv-txt {
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 300px 0;
+        z-index: 1;
+
+        >span {
+            font: 20px/1 'NotoSansKR';
+            color: #f7f7f7;
+        }
+
+        >h2 {
+            font: bold 3vw/2 'NotoSansKR';
+            color: #f7f7f7;
+        }
+
+        >p {
+            font: 16px/2 'NotoSansKR';
+            color: #f7f7f7;
+        }
+    }
 }
 
 
