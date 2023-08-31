@@ -123,7 +123,7 @@ a {
   content: "";
   width: 18px;
   height: 18px;
-  background-image: url("./img/logo/color.svg");
+  background-image: url("../img/logo/color.svg");
   background-size: cover;
   margin-right: 10px;
 }
@@ -308,7 +308,7 @@ a {
   content: "";
   width: 18px;
   height: 18px;
-  background-image: url("./img/logo/color.svg");
+  background-image: url("../img/logo/color.svg");
   background-size: cover;
   margin-right: 10px;
 }
@@ -1850,6 +1850,91 @@ a {
   display: none;
 }
 
+@media screen and (max-width: 1400px) {
+  #header h1 a {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: bold 26px/1 "NotoSansKR";
+    color: #fff;
+  }
+  #header h1 a::before {
+    display: block;
+    content: "";
+    background-image: url("../img/logo/white.svg");
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
+  #header h1.main-logo a::before {
+    background-image: url("../img/logo/white.svg");
+  }
+  #header nav .header-gnb > li {
+    width: 140px;
+  }
+  #header nav .header-gnb > li > a {
+    width: 140px;
+    font: bold 15px/1 "NotoSansKR";
+  }
+  #header nav .header-gnb .header-sub > li {
+    width: 140px;
+  }
+  #header nav .header-gnb .header-sub > li > a {
+    font: 14px/1 "NotoSansKR";
+  }
+  #header .header-icon {
+    gap: 5px;
+  }
+  #header .header-icon li > a {
+    width: 35px;
+    height: 35px;
+  }
+  #header .header-icon li > a i {
+    font-size: 20px;
+    line-height: 35px;
+  }
+  #header .header-icon li:last-of-type {
+    display: none;
+  }
+  #header.on h1 a::before {
+    background-image: url("../img/logo/color.svg");
+  }
+  #header.on nav .header-gnb > li {
+    width: 140px;
+  }
+  #header.on nav .header-gnb > li > a {
+    font: bold 15px/1 "NotoSansKR";
+  }
+  #header.search {
+    padding: 0 200px;
+  }
+  #header.search h1 a {
+    font: bold 24px/1 "NotoSansKR";
+  }
+  #header.search h1 a::before {
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/logo/color.svg");
+  }
+  #header.search #search-txt {
+    font: 15px/1 "NotoSansKR";
+  }
+  #header.search .search-close {
+    width: 40px;
+    height: 40px;
+  }
+  #header.search .search-close > i {
+    font-size: 30px;
+  }
+  #header.search .header-icon li > a {
+    width: 25px;
+    height: 25px;
+  }
+  #header.search .header-icon li > a i {
+    font-size: 25px;
+  }
+}
 #footer {
   position: relative;
   overflow: hidden;

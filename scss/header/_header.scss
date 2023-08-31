@@ -413,3 +413,158 @@
 
 }
 
+@media screen and (max-width: 1400px) {
+    #header {
+        h1 {
+            a {
+                height: 100px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                font: bold 26px/1 'NotoSansKR';
+                color: #fff;
+    
+                &::before {
+                    display: block;
+                    content: '';
+                    background-image: url("../img/logo/white.svg");
+                    background-size: cover;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+    
+            &.main-logo {
+                a {
+                    &::before {
+                        background-image: url("../img/logo/white.svg");
+                    }
+                }
+            }
+    
+        }
+
+        nav {
+            .header-gnb {
+        
+                >li {
+                    width: 140px;
+
+                    >a {
+                        width: 140px;
+                        font: bold 15px/1 'NotoSansKR';
+                    }
+                }
+        
+                .header-sub {
+
+                    >li {
+                        width: 140px;
+    
+                        >a {
+                            font: 14px/1 'NotoSansKR';
+                        }
+                    }
+                }
+            }
+        }
+    
+        .header-icon {
+            gap:5px;
+
+            li {
+                >a {
+                    width: 35px;
+                    height: 35px;
+    
+                    i {
+                        font-size: 20px;
+                        line-height: 35px;
+                    }
+                }
+
+                &:last-of-type {
+                    display: none;
+                }
+            }
+        }
+    
+        &.on {
+    
+            h1 {
+                a {
+                    &::before {
+                        background-image: url("../img/logo/color.svg");
+                    }
+                }
+        
+            }
+    
+            nav {
+                .header-gnb {
+                    >li {
+                        width: 140px;
+    
+                        >a {
+                            font: bold 15px/1 'NotoSansKR';
+                        }
+        
+                    }
+            
+        
+                }
+            }
+    
+    
+        }
+    
+        &.search {
+            padding: 0 200px;
+    
+            h1 {
+    
+                a {
+                    font: bold 24px/1 'NotoSansKR';
+        
+                    &::before {
+                        width: 25px;
+                        height: 25px;
+                        background-image: url("../img/logo/color.svg");
+                    }
+                }
+        
+            }
+    
+    
+            #search-txt {
+                font: 15px/1 'NotoSansKR';
+            }
+    
+            .search-close {
+                width: 40px;
+                height: 40px;
+                
+                >i {
+                    font-size: 30px;
+                }
+            }
+        
+            .header-icon {
+
+                li {
+                    >a {
+                        width: 25px;
+                        height: 25px;
+                        i {
+                            font-size: 25px;
+                        }
+    
+                    }
+    
+                }
+            }
+
+        }
+    
+    }
+}
