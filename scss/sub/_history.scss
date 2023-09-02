@@ -380,3 +380,16 @@
         }
     }
 }
+
+@media screen and (max-width: $mobile) {
+    #sub-history {
+    
+        .history-nav {
+    
+            &.fixed {
+                top: 50px;
+    
+            }
+        }
+    }
+}
