@@ -26,14 +26,6 @@
                 color: $subColor;
                 margin-bottom: 10px;
 
-                // &::before {
-                //     display: block;
-                //     content: '';
-                //     width: 25px;
-                //     height: 25px;
-                //     background-image: url('../../img/logo/black.svg');
-                // }
-
             }
 
             >ul {
@@ -104,5 +96,85 @@
             }
         }
 
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #footer {
+    
+        .footer-inner {
+    
+            .footer-left {
+
+                >h2 {
+                    font: bold 22px/1 'NotoSansKR';
+    
+                }
+    
+                >ul {
+    
+                    >li {
+    
+                        >a {
+                            font: 12px/1 'NotoSansKR';
+                        }
+                    }
+                }
+    
+                p {
+                    font: 12px/1 'NotoSansKR';
+                }
+    
+    
+                #family-site {
+                    font: 14px/1 'NotoSansKR';
+                }
+            }
+    
+            .footer-right {
+                display: none;
+            }
+    
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #footer {
+        height: auto;
+
+        .footer-inner {
+    
+            .footer-left {
+    
+                >ul {
+                    gap: 5px;
+                    >li {
+                        margin-bottom: 0;
+                        >a {
+                            font: 12px/1 'NotoSansKR';
+                        }
+                    }
+
+                    &:last-of-type {
+                        margin-bottom: 30px;
+                    }
+                }
+    
+                p {
+                    font: 10px/1 'NotoSansKR';
+                    position: static;
+                }
+    
+    
+                #family-site {
+                    position: static;
+                    font: 12px/1 'NotoSansKR';
+                    margin-bottom: 20px;
+                    padding: 0 5px;
+                }
+            }
+    
+        }
     }
 }

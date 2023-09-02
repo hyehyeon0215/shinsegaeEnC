@@ -2853,4 +2853,49 @@ a {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 1200px) {
+  #footer .footer-inner .footer-left > h2 {
+    font: bold 22px/1 "NotoSansKR";
+  }
+  #footer .footer-inner .footer-left > ul > li > a {
+    font: 12px/1 "NotoSansKR";
+  }
+  #footer .footer-inner .footer-left p {
+    font: 12px/1 "NotoSansKR";
+  }
+  #footer .footer-inner .footer-left #family-site {
+    font: 14px/1 "NotoSansKR";
+  }
+  #footer .footer-inner .footer-right {
+    display: none;
+  }
+}
+@media screen and (max-width: 800px) {
+  #footer {
+    height: auto;
+  }
+  #footer .footer-inner .footer-left > ul {
+    gap: 5px;
+  }
+  #footer .footer-inner .footer-left > ul > li {
+    margin-bottom: 0;
+  }
+  #footer .footer-inner .footer-left > ul > li > a {
+    font: 12px/1 "NotoSansKR";
+  }
+  #footer .footer-inner .footer-left > ul:last-of-type {
+    margin-bottom: 30px;
+  }
+  #footer .footer-inner .footer-left p {
+    font: 10px/1 "NotoSansKR";
+    position: static;
+  }
+  #footer .footer-inner .footer-left #family-site {
+    position: static;
+    font: 12px/1 "NotoSansKR";
+    margin-bottom: 20px;
+    padding: 0 5px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
