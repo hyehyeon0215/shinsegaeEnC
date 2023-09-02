@@ -2045,6 +2045,7 @@ a {
     display: none;
   }
   #sub-vision > div.content2 > .vision-bg {
+    background: url("../img/vision/background.jpg") no-repeat center/cover fixed;
     height: 200px;
   }
   #sub-vision > div.content2 > .vision-bg > h2 {
