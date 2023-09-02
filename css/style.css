@@ -653,7 +653,7 @@ a {
     font: bold 22px/1 "NotoSansKR";
   }
   #sub-location .map-wrap .map-txt > h3 > p:last-of-type {
-    font: bold 16px/1 "NotoSansKR";
+    font: bold 16px/1.5 "NotoSansKR";
     color: #4F5959;
   }
   #sub-location .publictransport-wrap {
@@ -700,7 +700,7 @@ a {
   }
   #sub-location .publictransport-wrap > ul > li.bus > ul > li {
     margin: 50px 0;
-    font: bold 16px/1 "NotoSansKR";
+    font: bold 16px/1.5 "NotoSansKR";
   }
   #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul {
     gap: 0px;
@@ -732,6 +732,9 @@ a {
   }
   #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > span {
     font: 13px/30px "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li::before {
+    display: none;
   }
 }
 .business-title {
