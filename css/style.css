@@ -693,19 +693,45 @@ a {
     margin: 0;
   }
   #sub-location .publictransport-wrap > ul > li.bus > ul > li {
-    margin: 50px 0;
+    margin: 30px 0;
+    background-color: #f7f7f7;
     font: bold 16px/1.5 "NotoSansKR";
+    padding: 15px;
   }
   #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul {
     gap: 0px;
   }
   #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li {
-    padding: 5px 15px;
+    padding: 5px 10px;
     font: 14px/1 "NotoSansKR";
   }
   #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li:nth-of-type(1) {
+    padding: 5px 0px;
+    font: bold 16px/1 "NotoSansKR";
+    border-radius: 0;
     width: 100%;
     margin-bottom: 10px;
+    background: none;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-b {
+    color: #2B75E4;
+    border-bottom: 1px solid #2B75E4;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-y {
+    color: #F0BF12;
+    border-bottom: 1px solid #F0BF12;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-r {
+    color: #DC2B20;
+    border-bottom: 1px solid #DC2B20;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-g {
+    color: #4BAA11;
+    border-bottom: 1px solid #4BAA11;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li.back-lg {
+    color: #A0CA5B;
+    border-bottom: 1px solid #A0CA5B;
   }
   #sub-location .publictransport-wrap > ul > li.subway {
     font: bold 18px/1 "NotoSansKR";
@@ -714,6 +740,8 @@ a {
     margin: 0;
   }
   #sub-location .publictransport-wrap > ul > li.subway > ul > li {
+    margin: 30px 0;
+    padding: 15px;
     font: bold 16px/1 "NotoSansKR";
   }
   #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li {
