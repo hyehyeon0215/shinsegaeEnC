@@ -268,3 +268,13 @@
         }
     }
 }
+
+@media screen and (max-width:400px) {
+    .sub-inner {
+        padding: 100px 0 50px;
+        .sub-nav {
+            top: 50px;
+    
+        }
+    }
+}

@@ -1460,6 +1460,14 @@ a {
     font: bold 26px/1 "NotoSansKR";
   }
 }
+@media screen and (max-width: 400px) {
+  .sub-inner {
+    padding: 100px 0 50px;
+  }
+  .sub-inner .sub-nav {
+    top: 50px;
+  }
+}
 #sub-history {
   width: 100%;
   min-height: 100vh;
