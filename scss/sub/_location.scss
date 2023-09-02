@@ -319,6 +319,13 @@
 @media screen and (max-width: 500px) {
     #sub-location {
 
+        .map-wrap {
+
+            #map {
+                height: 250px;
+            }
+        }
+
         .publictransport-wrap {
             width: 100%;
     

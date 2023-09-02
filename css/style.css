@@ -682,6 +682,9 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
+  #sub-location .map-wrap #map {
+    height: 250px;
+  }
   #sub-location .publictransport-wrap {
     width: 100%;
   }
