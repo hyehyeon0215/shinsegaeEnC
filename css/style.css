@@ -611,6 +611,129 @@ a {
   right: 0;
 }
 
+@media screen and (max-width: 1600px) {
+  #sub-location .map-wrap {
+    height: 400px;
+  }
+  #sub-location .map-wrap .map-txt {
+    padding: 20px;
+    margin-left: 20px;
+  }
+  #sub-location .map-wrap .map-txt > h3 {
+    gap: 20px;
+  }
+  #sub-location .map-wrap .map-txt > h3 > p {
+    font: bold 24px/1 "NotoSansKR";
+  }
+  #sub-location .map-wrap .map-txt > h3 > p:last-of-type {
+    font: bold 18px/2 "NotoSansKR";
+  }
+}
+@media screen and (max-width: 1024px) {
+  #sub-location .map-wrap {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin: 0 0 70px;
+  }
+  #sub-location .map-wrap #map {
+    width: 100%;
+    height: 400px;
+  }
+  #sub-location .map-wrap .map-txt {
+    width: 90%;
+    margin: 50px auto;
+    height: 300px;
+    padding: 0px;
+  }
+  #sub-location .map-wrap .map-txt > h3 {
+    gap: 10px;
+  }
+  #sub-location .map-wrap .map-txt > h3 > p {
+    font: bold 22px/1 "NotoSansKR";
+  }
+  #sub-location .map-wrap .map-txt > h3 > p:last-of-type {
+    font: bold 16px/1 "NotoSansKR";
+    color: #4F5959;
+  }
+  #sub-location .publictransport-wrap {
+    width: 100%;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus {
+    margin: 0;
+    font: bold 22px/1 "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul {
+    margin: 30px 0;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li {
+    font: bold 18px/1 "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul {
+    border-bottom: none;
+  }
+  #sub-location .publictransport-wrap > ul > li.subway {
+    margin: 100px 0 50px;
+    font: bold 22px/1 "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.subway > ul > li {
+    font: bold 18px/1 "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li {
+    border-bottom: none;
+  }
+  #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p {
+    padding: 0 10px;
+    font: 16px/30px "NotoSansKR";
+  }
+}
+@media screen and (max-width: 500px) {
+  #sub-location .publictransport-wrap {
+    width: 100%;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus {
+    margin: 0;
+    font: bold 18px/1 "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul {
+    margin: 0;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li {
+    margin: 50px 0;
+    font: bold 16px/1 "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul {
+    gap: 0px;
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li {
+    padding: 5px 15px;
+    font: 14px/1 "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.bus > ul > li > ul > li:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #sub-location .publictransport-wrap > ul > li.subway {
+    font: bold 18px/1 "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.subway > ul {
+    margin: 0;
+  }
+  #sub-location .publictransport-wrap > ul > li.subway > ul > li {
+    font: bold 16px/1 "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li {
+    gap: 10px;
+    border-bottom: none;
+  }
+  #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > p {
+    padding: 0 10px;
+    font: 14px/30px "NotoSansKR";
+  }
+  #sub-location .publictransport-wrap > ul > li.subway > ul > li > ul > li > span {
+    font: 13px/30px "NotoSansKR";
+  }
+}
 .business-title {
   position: relative;
   margin-top: 100px;
@@ -1041,7 +1164,7 @@ a {
 }
 @media screen and (max-width: 500px) {
   .sub-inner {
-    padding: 130px 0;
+    padding: 130px 0 50px;
   }
   .sub-inner .sub-nav {
     top: 70px;
