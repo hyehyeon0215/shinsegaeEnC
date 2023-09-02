@@ -133,6 +133,7 @@
         display: flex;
         align-items: center;
         li {
+            text-align: center;
             >a {
                 display: block;
                 width: 40px;
@@ -415,6 +416,8 @@
 
 @media screen and (max-width: 1400px) {
     #header {
+        width: 100%;
+
         h1 {
             a {
                 height: 100px;
@@ -517,6 +520,84 @@
     
     
         }
+
+        &.white {
+            h1 {
+                a {
+                    &::before {
+                        background-image: url("../img/logo/color.svg");
+                    }
+                }
+        
+            }
+        }
+    
+        &.search {
+            padding: 0 200px;
+    
+            h1 {
+    
+                a {
+                    font: bold 24px/1 'NotoSansKR';
+        
+                    &::before {
+                        width: 25px;
+                        height: 25px;
+                        background-image: url("../img/logo/color.svg");
+                    }
+                }
+        
+            }
+    
+    
+            #search-txt {
+                font: 15px/1 'NotoSansKR';
+            }
+    
+            .search-close {
+                width: 40px;
+                height: 40px;
+                
+                >i {
+                    font-size: 30px;
+                }
+            }
+        
+            .header-icon {
+
+                li {
+                    >a {
+                        width: 25px;
+                        height: 25px;
+                        i {
+                            font-size: 25px;
+                        }
+    
+                    }
+    
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    #header {
+
+        nav {
+            display: none;
+        }
+    
+        &.on {
+    
+    
+            nav {
+                display: none;
+            }
+    
+    
+        }
     
         &.search {
             padding: 0 200px;
@@ -566,5 +647,99 @@
 
         }
     
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    #header {
+        height: 70px;
+        padding: 0 20px;
+    
+        h1 {
+            a {
+                height: 70px;
+                font: bold 24px/1 'NotoSansKR';
+     
+                &::before {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+    
+        }
+        .header-icon {
+            height: 70px;
+            li {
+                text-align: center;
+                &:nth-of-type(1), &:nth-of-type(2) {
+                    display: none;
+                }
+            }
+        }
+
+        &.on {
+            nav {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #header {
+
+        h1 {
+            display: flex;
+            align-items: center;
+
+            a {
+                display: none;
+            }
+
+            &::before {
+                display: block;
+                content: '';
+                background-image: url("../img/logo/white.svg");
+                background-size: cover;
+                width: 30px;
+                height: 30px;
+            }
+    
+        }
+        .header-icon {
+
+            li {
+                text-align: right;
+                >a {
+    
+                    i {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        &.white {
+ 
+            h1 {
+                
+                display: flex;
+                align-items: center;
+    
+                a {
+                    display: none;
+                }
+    
+                &::before {
+                    display: block;
+                    content: '';
+                    background-image: url("../img/logo/color.svg");
+                    background-size: cover;
+                    width: 30px;
+                    height: 30px;
+                }
+        
+            }
+        }
     }
 }

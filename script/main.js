@@ -174,7 +174,6 @@ function field_counting() {
         let cnt = 0;
         let time = 2000/num;
 
-        console.log(num_el);
 
         setInterval(() => {
             if (cnt === num) {
