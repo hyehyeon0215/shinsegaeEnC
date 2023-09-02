@@ -124,3 +124,145 @@
         }
     }
 }
+
+@media screen and (max-width: $tablet) {
+    .sub-inner {
+    
+        .sub-nav {
+            >ul {
+    
+                >li {
+                    
+                    >a {
+                        font: 14px/1 'NotoSansKR';
+                    }
+    
+                    >ul {
+
+                        
+                        >li {
+                            font: 14px/1 'NotoSansKR';
+            
+                        }
+                    }
+                }
+            }
+        }
+    
+        .sub-content {
+    
+            .sub-title {
+                height: 200px;
+                justify-content: end;
+                gap: 20px;
+    
+                >h2 {
+                    font: bold 40px/1 'NotoSansKR';
+                }
+    
+                >p {
+                    font: 16px/1 'NotoSansKR';
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 915px) {
+    .sub-inner {
+    
+        .sub-content {
+    
+            .sub-title {
+    
+                >p {
+                    display: none;
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .sub-inner {
+    
+        .sub-nav {
+            top: 70px;
+        }
+
+        .sub-content {
+    
+            .sub-title {
+                height: 100px;
+                padding: 70px 30px 20px;
+    
+                >h2 {
+                    font: bold 36px/1 'NotoSansKR';
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width:500px) {
+    .sub-inner {
+        padding: 130px 0;
+    
+        .sub-nav {
+            top: 70px;
+            height: 40px;
+    
+            >ul {
+    
+                >li {
+                    height: 40px;
+                    
+                    >a {
+                        height: 40px;
+                        font: 12px/1 'NotoSansKR';
+    
+                        &::after {
+                            margin: 0 10px;
+                        }
+                    }
+    
+                    &:nth-of-type(1) {
+                        >a {
+                            margin-left: 20px;
+                        }
+                    }
+    
+                    >ul {
+                        padding: 10px;
+                        
+                        >li {
+                            width: 130px;;
+                            font: 12px/1 'NotoSansKR';
+    
+                            >a {
+                                color: #fff;
+                                font-weight: normal;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+
+        .sub-content {
+            .sub-title {
+                height: 100px;
+                padding: 50px 0px 20px;
+    
+                >h2 {
+                    font: bold 26px/1 'NotoSansKR';
+                }
+
+            }
+        }
+    }
+}
