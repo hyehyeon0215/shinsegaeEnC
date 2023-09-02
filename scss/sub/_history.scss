@@ -203,3 +203,180 @@
         }
     }
 }
+
+@media screen and (max-width: $tablet) {
+    #sub-history {
+    
+        .history-nav {
+
+            >ul {
+                >li {
+                    position: relative;
+                    >a {
+                        >span {
+                            width: 25px;
+                            height: 25px;
+                        }
+    
+                        >p {
+                            font: 16px/1 'NotoSansKR';
+                        }
+                    }
+    
+                }
+            }
+    
+            &.fixed {
+                height: 100px;
+    
+                >ul {
+                    top: 40%;
+                    height: 2px;
+
+                    li {
+                        a {
+                            p {
+                                font: 14px/1 'NotoSansKR';
+                            }
+                        }
+                    }
+    
+                    &::after {
+                        width: 35px;
+                        height: 35px;
+                        top: -15px
+                    }
+                }
+    
+            }
+        }
+    
+        .history-wrap {
+            width: 100%;
+
+            >div {
+                padding: 50px 0 0;
+    
+                >ul {
+                    margin-bottom: 50px;
+    
+                    >li {
+    
+                        &:nth-of-type(1) {
+                            
+                            >h3 {
+                                justify-content: start;
+                                font: bold 26px/1 'NotoSansKR';
+                            }
+                        }
+    
+                        &:nth-of-type(2) {
+                            flex: 2;
+    
+                            >ul {
+                                margin-top: -5px;
+                                gap: 20px;
+    
+                                >li {
+                                    >p {
+                                        font: 16px/2 "NotoSansKR";
+    
+                                        >span {
+                                            font: bold 18px/2 "NotoSansKR";
+    
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &::after {
+                        width: 100%;
+                        bottom: -25px;;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    #sub-history {
+    
+        .history-nav {
+    
+            &.fixed {
+                top: 70px;
+    
+                >ul {
+                    width: 70%;
+
+                }
+    
+            }
+        }
+    
+        .history-wrap {
+            width: 90%;
+
+            >div {
+    
+                >ul {
+                    margin-bottom: 100px;
+                    flex-direction: column;
+                    gap: 30px;
+    
+                    >li {
+    
+                        &:nth-of-type(1) {
+                            >h3 {
+                                font: bold 32px/1 'NotoSansKR';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    #sub-history {
+    
+        .history-nav {
+    
+            &.fixed {
+                top: 70px;
+    
+                >ul {
+                    width: 70%;
+
+                }
+    
+            }
+        }
+    
+        .history-wrap {
+            width: 90%;
+
+            >div {
+    
+                >ul {
+                    margin-bottom: 100px;
+                    flex-direction: column;
+                    gap: 30px;
+    
+                    >li {
+    
+                        &:nth-of-type(1) {
+                            >h3 {
+                                font: bold 32px/1 'NotoSansKR';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

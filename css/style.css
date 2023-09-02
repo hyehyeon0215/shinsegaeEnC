@@ -1362,6 +1362,101 @@ a {
   display: none;
 }
 
+@media screen and (max-width: 1024px) {
+  #sub-history .history-nav > ul > li {
+    position: relative;
+  }
+  #sub-history .history-nav > ul > li > a > span {
+    width: 25px;
+    height: 25px;
+  }
+  #sub-history .history-nav > ul > li > a > p {
+    font: 16px/1 "NotoSansKR";
+  }
+  #sub-history .history-nav.fixed {
+    height: 100px;
+  }
+  #sub-history .history-nav.fixed > ul {
+    top: 40%;
+    height: 2px;
+  }
+  #sub-history .history-nav.fixed > ul li a p {
+    font: 14px/1 "NotoSansKR";
+  }
+  #sub-history .history-nav.fixed > ul::after {
+    width: 35px;
+    height: 35px;
+    top: -15px;
+  }
+  #sub-history .history-wrap {
+    width: 100%;
+  }
+  #sub-history .history-wrap > div {
+    padding: 50px 0 0;
+  }
+  #sub-history .history-wrap > div > ul {
+    margin-bottom: 50px;
+  }
+  #sub-history .history-wrap > div > ul > li:nth-of-type(1) > h3 {
+    justify-content: start;
+    font: bold 26px/1 "NotoSansKR";
+  }
+  #sub-history .history-wrap > div > ul > li:nth-of-type(2) {
+    flex: 2;
+  }
+  #sub-history .history-wrap > div > ul > li:nth-of-type(2) > ul {
+    margin-top: -5px;
+    gap: 20px;
+  }
+  #sub-history .history-wrap > div > ul > li:nth-of-type(2) > ul > li > p {
+    font: 16px/2 "NotoSansKR";
+  }
+  #sub-history .history-wrap > div > ul > li:nth-of-type(2) > ul > li > p > span {
+    font: bold 18px/2 "NotoSansKR";
+  }
+  #sub-history .history-wrap > div > ul::after {
+    width: 100%;
+    bottom: -25px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #sub-history .history-nav.fixed {
+    top: 70px;
+  }
+  #sub-history .history-nav.fixed > ul {
+    width: 70%;
+  }
+  #sub-history .history-wrap {
+    width: 90%;
+  }
+  #sub-history .history-wrap > div > ul {
+    margin-bottom: 100px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #sub-history .history-wrap > div > ul > li:nth-of-type(1) > h3 {
+    font: bold 32px/1 "NotoSansKR";
+  }
+}
+@media screen and (max-width: 768px) {
+  #sub-history .history-nav.fixed {
+    top: 70px;
+  }
+  #sub-history .history-nav.fixed > ul {
+    width: 70%;
+  }
+  #sub-history .history-wrap {
+    width: 90%;
+  }
+  #sub-history .history-wrap > div > ul {
+    margin-bottom: 100px;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #sub-history .history-wrap > div > ul > li:nth-of-type(1) > h3 {
+    font: bold 32px/1 "NotoSansKR";
+  }
+}
 #sub-vision {
   width: 80%;
   height: auto;
