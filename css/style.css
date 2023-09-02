@@ -979,6 +979,10 @@ a {
   margin: 10px 0;
   font: bold 18px/1 "NotoSansKR";
 }
+.business-inner .business-content .business-list .img-list.grid > li > a > p:nth-of-type(2) {
+  font: 16px/1 "NotoSansKR";
+  color: #4F5959;
+}
 .business-inner .business-content .business-list .img-list.list-ul {
   width: 100%;
   display: flex;
@@ -1023,6 +1027,236 @@ a {
   color: #fff;
 }
 
+@media screen and (max-width: 1500px) {
+  .business-title .title-txt > h2 {
+    font: bold 40px/1 "NotoSansKR";
+  }
+  .business-title .title-txt > p {
+    font: 18px/2 "NotoSansKR";
+  }
+  .business-inner {
+    width: 90%;
+  }
+  .business-inner .business-nav > p {
+    font: bold 18px/1 "NotoSansKR";
+  }
+  .business-inner .business-nav > ul > li > a {
+    font: 18px/1 "NotoSansKR";
+  }
+  .business-inner .business-content {
+    width: 90%;
+  }
+  .business-inner .business-content .main-content {
+    padding: 20px;
+    height: 400px;
+    gap: 30px;
+  }
+  .business-inner .business-content .main-content > .txt > p:nth-of-type(1) {
+    font: bold 30px/1 "NotoSansKR";
+  }
+  .business-inner .business-content .main-content > .txt > p:nth-of-type(1) > span {
+    display: block;
+    margin-left: 5px;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  .business-inner .business-content .main-content > .txt > p:nth-of-type(2) {
+    font: 16px/1.5 "NotoSansKR";
+  }
+  .business-inner .business-content .business-list {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .business-inner .business-content .business-list .img-list.list-ul > li > a > p:nth-of-type(1) {
+    flex: 10;
+  }
+}
+@media screen and (max-width: 800px) {
+  .business-title {
+    margin-top: 70px;
+    height: 300px;
+  }
+  .business-title::after {
+    height: 300px;
+  }
+  .business-title .title-txt {
+    gap: 30px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+  .business-title .title-txt > h2 {
+    font: bold 26px/1 "NotoSansKR";
+  }
+  .business-title .title-txt > h2::after {
+    display: none;
+  }
+  .business-title .title-txt > p {
+    font: 14px/2 "NotoSansKR";
+  }
+  .business-inner {
+    width: 90%;
+  }
+  .business-inner .business-nav {
+    width: 90%;
+    height: 50px;
+    top: -25px;
+  }
+  .business-inner .business-nav > p {
+    width: 100px;
+    font: bold 16px/1 "NotoSansKR";
+  }
+  .business-inner .business-nav > ul {
+    width: calc(100% - 100px);
+    display: flex;
+  }
+  .business-inner .business-nav > ul > li {
+    flex: 1;
+  }
+  .business-inner .business-nav > ul > li > a {
+    font: 14px/1 "NotoSansKR";
+  }
+  .business-inner .business-content {
+    width: 90%;
+    padding: 80px 0 100px;
+  }
+  .business-inner .business-content .main-content {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+  }
+  .business-inner .business-content .main-content > .img {
+    flex: 1;
+    height: 400px;
+  }
+  .business-inner .business-content .main-content > .txt {
+    flex: 1;
+    height: 200px;
+    justify-content: start;
+  }
+  .business-inner .business-content .main-content > .txt > p:nth-of-type(1) {
+    font: bold 22px/1 "NotoSansKR";
+  }
+  .business-inner .business-content .main-content > .txt > p:nth-of-type(1) > span {
+    display: block;
+    margin-left: 0px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .business-inner .business-content .main-content > .txt > p:nth-of-type(1)::after {
+    display: none;
+  }
+  .business-inner .business-content .main-content > .txt > p:nth-of-type(2) {
+    display: none;
+  }
+  .business-inner .business-content .business-list .icon-list {
+    margin-top: 0px;
+  }
+  .business-inner .business-content .business-list .icon-list > li {
+    width: 18px;
+    height: 18px;
+  }
+  .business-inner .business-content .business-list .icon-list > li > a > i {
+    font-size: 18px;
+  }
+  .business-inner .business-content .business-list .img-list.grid > li {
+    width: 50%;
+    padding: 10px;
+  }
+  .business-inner .business-content .business-list .img-list.grid > li > a > p:nth-of-type(1) {
+    margin: 10px 0;
+    font: bold 16px/1 "NotoSansKR";
+  }
+  .business-inner .business-content .business-list .img-list.grid > li > a > p:nth-of-type(2) {
+    font: 14px/1 "NotoSansKR";
+    color: #4F5959;
+  }
+  .business-inner .business-content .business-list .img-list.list-ul > li > a {
+    padding: 15px 10px;
+    font: 14px/1 "NotoSansKR";
+  }
+  .business-inner .business-content .business-list .img-list.list-ul > li > a > p:nth-of-type(1) {
+    flex: 5;
+  }
+}
+@media screen and (max-width: 500px) {
+  .business-title {
+    height: 200px;
+  }
+  .business-title::after {
+    height: 200px;
+  }
+  .business-title .title-txt > h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .business-title .title-txt > p {
+    display: none;
+  }
+  .business-inner {
+    width: 100%;
+  }
+  .business-inner .business-nav {
+    height: 40px;
+    top: -20px;
+  }
+  .business-inner .business-nav > p {
+    display: none;
+  }
+  .business-inner .business-nav > ul {
+    width: 100%;
+  }
+  .business-inner .business-nav > ul > li > a {
+    font: 13px/1 "NotoSansKR";
+  }
+  .business-inner .business-content {
+    padding: 80px 0;
+  }
+  .business-inner .business-content .main-content {
+    height: 300px;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  .business-inner .business-content .main-content > .img {
+    height: 200px;
+  }
+  .business-inner .business-content .main-content > .img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .business-inner .business-content .main-content > .txt {
+    height: 50px;
+  }
+  .business-inner .business-content .main-content > .txt > p:nth-of-type(1) {
+    font: bold 20px/1 "NotoSansKR";
+  }
+  .business-inner .business-content .business-list .icon-list {
+    height: 60px;
+    padding-right: 20px;
+    gap: 10px;
+  }
+  .business-inner .business-content .business-list .icon-list > li {
+    width: 16px;
+    height: 16px;
+  }
+  .business-inner .business-content .business-list .icon-list > li > a > i {
+    font-size: 16px;
+  }
+  .business-inner .business-content .business-list .img-list.grid > li {
+    width: 100%;
+    padding: 20px;
+  }
+  .business-inner .business-content .business-list .img-list.list-ul > li > a {
+    font: 14px/1 "NotoSansKR";
+  }
+  .business-inner .business-content .business-list .img-list.list-ul > li > a > p:nth-of-type(1) {
+    flex: 6;
+  }
+}
 .sub-inner {
   width: 100%;
   height: auto;
