@@ -2057,6 +2057,9 @@ a {
   #sub-vision > div.content2 > p {
     font: 14px/2 "NotoSansKR";
   }
+  #sub-vision > div.content3 > img {
+    margin-top: 50px;
+  }
   #sub-vision > div.content4 > p {
     font: 14px/2 "NotoSansKR";
   }
