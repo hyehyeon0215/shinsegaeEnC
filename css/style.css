@@ -1929,6 +1929,9 @@ a {
     left: 0;
     transform: none;
   }
+  #sub-vision > div.content2 > .vision-bg {
+    background: url("../img/vision/background.jpg") no-repeat center/cover fixed;
+  }
   #sub-vision > div.content2 > .vision-bg > h2 {
     font: bold 26px/1 "NotoSansKR";
   }
