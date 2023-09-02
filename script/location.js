@@ -8,7 +8,7 @@ var mapContainer = document.getElementById('map'),
 
 var map = new kakao.maps.Map(mapContainer, mapOption);
 
-var imageSrc = '../img/logo/marker.svg', // 마커이미지의 주소입니다    
+var imageSrc = '../img/logo/marker.svg', 
     imageSize = new kakao.maps.Size(64, 69),
     imageOption = {offset: new kakao.maps.Point(27, 69)};
       
