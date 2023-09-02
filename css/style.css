@@ -1149,6 +1149,9 @@ a {
   }
 }
 @media screen and (max-width: 915px) {
+  .sub-inner .sub-content .sub-title {
+    padding: 100px 20px 50px;
+  }
   .sub-inner .sub-content .sub-title > p {
     display: none;
   }
@@ -1638,6 +1641,159 @@ a {
   margin-bottom: 150px;
 }
 
+@media screen and (max-width: 1024px) {
+  #sub-vision {
+    width: 100%;
+  }
+  #sub-vision > div {
+    margin-bottom: 150px;
+  }
+  #sub-vision > div > span {
+    font: bold 20px/1 "NotoSansKR";
+  }
+  #sub-vision > div.content1 {
+    margin-top: 100px;
+  }
+  #sub-vision > div.content1 > h2 {
+    font: 30px/2 "NotoSansKR";
+  }
+  #sub-vision > div.content1 > h2::before {
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  #sub-vision > div.content2 > .vision-bg > h2 {
+    font: bold 26px/1 "NotoSansKR";
+  }
+  #sub-vision > div.content2 > p {
+    font: 16px/2 "NotoSansKR";
+  }
+  #sub-vision > div.content4 > p {
+    font: 16px/2 "NotoSansKR";
+    text-align: center;
+    margin: 50px 0;
+  }
+  #sub-vision > div.content4 > ul > li {
+    width: 80%;
+    height: 40px;
+  }
+  #sub-vision > div.content4 > ul > li > h3 {
+    font: 20px/1 "NotoSansKR";
+  }
+  #sub-vision > div.content4 > ul > li > span {
+    font: bold 16px/1 "NotoSansKR";
+  }
+  #sub-vision > div.content5 {
+    margin-bottom: 100px;
+  }
+  #sub-vision > div.content5 > ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #sub-vision > div.content5 > ul > li {
+    width: 100%;
+    height: 200px;
+    margin: 0px;
+  }
+  #sub-vision > div.content5 > ul > li > img {
+    height: 200px;
+    object-fit: cover;
+  }
+  #sub-vision > div.content5 > ul > li > .vision-txt {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+  }
+  #sub-vision > div.content5 > ul > li > .vision-txt > span {
+    font: bold 36px/1 "NotoSansKR";
+    margin-bottom: 20px;
+  }
+  #sub-vision > div.content5 > ul > li > .vision-txt > h3 {
+    font: bold 18px/1.5 "NotoSansKR";
+    margin-bottom: 20px;
+  }
+  #sub-vision > div.content5 > ul > li > .vision-txt > p {
+    font: bold 14px/1.5 "NotoSansKR";
+    color: #f7f7f7;
+    margin-bottom: 10px;
+  }
+  #sub-vision > div.content5 > ul > li:nth-of-type(1) > .vision-txt > h3 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  #sub-vision > div {
+    margin-bottom: 100px;
+  }
+  #sub-vision > div > span {
+    font: bold 14px/1 "NotoSansKR";
+    margin-left: 46px;
+  }
+  #sub-vision > div > span::before {
+    width: 42px;
+    left: -46px;
+    opacity: 0.9;
+  }
+  #sub-vision > div.content1 > h2 {
+    height: 100px;
+    font: bold 16px/2 "NotoSansKR";
+  }
+  #sub-vision > div.content1 > h2::before {
+    display: none;
+  }
+  #sub-vision > div.content2 > .vision-bg {
+    height: 200px;
+  }
+  #sub-vision > div.content2 > .vision-bg > h2 {
+    font: bold 20px/1 "NotoSansKR";
+  }
+  #sub-vision > div.content2 > p {
+    font: 14px/2 "NotoSansKR";
+  }
+  #sub-vision > div.content4 > p {
+    font: 14px/2 "NotoSansKR";
+  }
+  #sub-vision > div.content4 > ul > li {
+    width: 100%;
+  }
+  #sub-vision > div.content4 > ul > li > h3 {
+    font: 16px/1 "NotoSansKR";
+  }
+  #sub-vision > div.content4 > ul > li > span {
+    font: bold 14px/1 "NotoSansKR";
+  }
+  #sub-vision > div.content5 {
+    margin-bottom: 50px;
+  }
+  #sub-vision > div.content5 > ul > li {
+    height: 100px;
+  }
+  #sub-vision > div.content5 > ul > li > img {
+    height: 100px;
+  }
+  #sub-vision > div.content5 > ul > li > .vision-txt {
+    height: 100px;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #sub-vision > div.content5 > ul > li > .vision-txt > span {
+    font: bold 20px/1 "NotoSansKR";
+    margin-bottom: 0px;
+  }
+  #sub-vision > div.content5 > ul > li > .vision-txt > h3 {
+    font: bold 16px/1.5 "NotoSansKR";
+    margin-bottom: 0px;
+  }
+  #sub-vision > div.content5 > ul > li > .vision-txt > p {
+    display: none;
+  }
+}
 #sitemap {
   width: 100%;
   height: 100vh;

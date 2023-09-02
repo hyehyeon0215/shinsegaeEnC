@@ -212,3 +212,226 @@
         }
     }
 }
+
+@media screen and (max-width: $tablet) {
+    #sub-vision {
+        width: 100%;
+    
+        >div {
+            margin-bottom: 150px;
+    
+            >span {
+                font: bold 20px/1 "NotoSansKR";
+            }
+    
+            &.content1 {
+                margin-top: 100px;
+                >h2 {
+                    font: 30px/2 "NotoSansKR";
+    
+                    &::before {
+                        width: 100%;
+                        height: 50%;
+                        top: 0;
+                        left: 0;
+                        transform: none;
+                    }
+                }
+            }
+    
+            &.content2 {
+                >.vision-bg {
+    
+                    >h2 {
+                        font: bold 26px/1 "NotoSansKR";
+                    }
+                }
+
+                >p {
+                    font: 16px/2 "NotoSansKR";
+                }
+            }
+    
+    
+            &.content4 {
+                >p {
+                    font: 16px/2 "NotoSansKR";
+                    text-align: center;
+                    margin: 50px 0;
+                }
+    
+                >ul {
+    
+                    >li {
+                        width: 80%;
+                        height: 40px;
+    
+                        >h3 {
+                            font: 20px/1 "NotoSansKR";
+                        }
+    
+                        >span {
+                            font: bold 16px/1 "NotoSansKR";
+                        }
+                    }
+                }
+            }
+    
+            &.content5 {
+                margin-bottom: 100px;
+    
+                >ul {
+                    flex-direction: column;
+                    gap: 20px;
+    
+                    >li {
+                        width: 100%;
+                        height: 200px;
+                        margin: 0px;
+    
+                        >img {
+                            height: 200px;
+                            object-fit: cover;
+                        }
+                        
+                        >.vision-txt {
+                            height: 200px;
+                            position: absolute;
+                            top: 0;
+                            background-color: rgba($color: #000, $alpha: .5);
+                            padding: 10px 0px;
+                        
+                            >span {
+                                font: bold 36px/1 'NotoSansKR';
+                                margin-bottom: 20px;
+                            }
+    
+                            >h3 {
+                                font: bold 18px/1.5 'NotoSansKR';
+                                margin-bottom: 20px;
+                            }
+    
+                            >p {
+                                font: bold 14px/1.5 'NotoSansKR';
+                                color: #f7f7f7;
+                                margin-bottom: 10px;
+                            }
+                        }
+
+                        &:nth-of-type(1) {
+                            >.vision-txt {
+                                >h3 {
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #sub-vision {
+    
+        >div {
+            margin-bottom: 100px;
+    
+            >span {
+                font: bold 14px/1 "NotoSansKR";
+                margin-left: 46px;
+
+                &::before {
+                    width: 42px;
+                    left: -46px;
+                    opacity: .9;
+                }
+            }
+    
+            &.content1 {
+                >h2 {
+                    height: 100px;
+                    font: bold 16px/2 "NotoSansKR";
+    
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+    
+            &.content2 {
+                >.vision-bg {
+                    
+                    height: 200px;
+
+                    >h2 {
+                        font: bold 20px/1 "NotoSansKR";
+                    }
+                }
+
+                >p {
+                    font: 14px/2 "NotoSansKR";
+                }
+            }
+    
+    
+            &.content4 {
+                >p {
+                    font: 14px/2 "NotoSansKR";
+                }
+    
+                >ul {
+    
+                    >li {
+                        width: 100%;
+    
+                        >h3 {
+                            font: 16px/1 "NotoSansKR";
+                        }
+    
+                        >span {
+                            font: bold 14px/1 "NotoSansKR";
+                        }
+                    }
+                }
+            }
+    
+            &.content5 {
+                margin-bottom: 50px;
+                >ul {
+    
+                    >li {
+                        height: 100px;
+    
+                        >img {
+                            height: 100px;
+                        }
+                        
+                        >.vision-txt {
+                            height: 100px;
+                            padding: 20px 0px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-between;
+                        
+                            >span {
+                                font: bold 20px/1 'NotoSansKR';
+                                margin-bottom: 0px;
+                            }
+    
+                            >h3 {
+                                font: bold 16px/1.5 'NotoSansKR';
+                                margin-bottom: 0px;
+                            }
+    
+                            >p {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
