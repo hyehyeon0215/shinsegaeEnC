@@ -424,7 +424,7 @@ a {
   color: #f7f7f7;
 }
 #villiv > .villiv-txt > h2 {
-  font: bold 3vw/2 "NotoSansKR";
+  font: bold 40px/2 "NotoSansKR";
   color: #f7f7f7;
 }
 #villiv > .villiv-txt > p {
@@ -1054,6 +1054,15 @@ a {
     margin-top: 20px;
     font-size: 16px;
     font-weight: normal;
+  }
+  .business-inner .business-content .main-content > .txt > p:nth-of-type(1)::after {
+    display: block;
+    content: "";
+    width: 2px;
+    height: 100px;
+    margin: 15px 0 10px 5px;
+    background-color: #DA2128;
+    opacity: 0.5;
   }
   .business-inner .business-content .main-content > .txt > p:nth-of-type(2) {
     font: 16px/1.5 "NotoSansKR";
@@ -2123,29 +2132,6 @@ a {
 #sitemap .sitemap-left > h2 > span {
   font: 30px/1 "NotoSansKR";
 }
-#sitemap .sitemap-left .sitemap-btns {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-}
-#sitemap .sitemap-left .sitemap-btns > li {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-#sitemap .sitemap-left .sitemap-btns > li > a {
-  display: flex;
-  width: 90%;
-  height: 40px;
-  justify-content: center;
-  align-items: center;
-  font: 18px/1 "NotoSansKR";
-  color: #4F5959;
-  border-radius: 5px;
-  background-color: #DA2128;
-  color: #f8f8f8;
-}
 #sitemap .sitemap-left > p {
   position: absolute;
   bottom: 0;
@@ -2256,6 +2242,157 @@ a {
   }
   100% {
     transform: translateX(-50%) rotate(360deg);
+  }
+}
+@media screen and (max-width: 1919px) {
+  #sitemap {
+    height: auto;
+    position: relative;
+    flex-direction: column;
+  }
+  #sitemap .sitemap-close {
+    position: fixed;
+    right: 50px;
+    z-index: 2;
+  }
+  #sitemap .sitemap-left {
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: #DA2128;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.1);
+  }
+  #sitemap .sitemap-left > h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    position: relative;
+    cursor: default;
+  }
+  #sitemap .sitemap-left > h2::before {
+    display: block;
+    content: "";
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("../img/logo/white.svg");
+    background-size: cover;
+    cursor: pointer;
+    animation: rotate 30s linear infinite;
+  }
+  #sitemap .sitemap-left > h2:hover::before {
+    animation-play-state: paused;
+  }
+  #sitemap .sitemap-left > h2 > img {
+    width: 80%;
+  }
+  #sitemap .sitemap-left > h2 > span {
+    font: 30px/1 "NotoSansKR";
+  }
+  #sitemap .sitemap-left > p {
+    display: none;
+  }
+  #sitemap .sitemap-right {
+    width: 85%;
+    height: 100%;
+    padding: 100px;
+    margin: 0 auto;
+  }
+  #sitemap .sitemap-right .sitemap-1depth {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li {
+    flex: 1;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li > a {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    gap: 10px;
+    font: bold 30px/1 "NotoSansKR";
+    color: #4F5959;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li > a > span {
+    font: bold 18px/1 "NotoSanaKR";
+    color: #DA2128;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth {
+    width: 100%;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li > a {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    font: bold 18px/1 "NotoSansKR";
+    color: #4F5959;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li > a::before {
+    display: block;
+    content: "·";
+    margin: 0 10px;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth {
+    width: 100%;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li {
+    margin-left: 10px;
+    width: 100%;
+    position: relative;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li::before {
+    display: block;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: #DA2128;
+    position: absolute;
+    left: 0px;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li > a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    font: 16px/1 "NotoSansKR";
+    color: #000;
+    margin-left: 15px;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li .sitemap-4depth {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    padding-bottom: 20px;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li .sitemap-4depth > li > a {
+    position: relative;
+    display: block;
+    margin-left: 7px;
+    font: 15px/30px "NotoSansKR";
+    color: #888;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li .sitemap-4depth > li > a::before {
+    display: block;
+    content: "·";
+    position: absolute;
+    left: -7px;
+  }
+  #sitemap .sitemap-right .sitemap-1depth > li:nth-of-type(4) {
+    flex: 1.5;
   }
 }
 .main-bg {

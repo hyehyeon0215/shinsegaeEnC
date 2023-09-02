@@ -74,32 +74,6 @@
             }
         }
 
-        .sitemap-btns {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 100%;
-
-            >li {
-                width: 100%;
-                display: flex;
-                justify-content: center;
-
-                >a {
-                    display: flex;
-                    width: 90%;
-                    height: 40px;
-                    justify-content: center;
-                    align-items: center;
-                    font: 18px/1 'NotoSansKR';
-                    color: $subColor;
-                    border-radius: 5px;
-                    background-color: $mainColor;
-                    color: #f8f8f8;
-                }
-            }
-        }
-
         >p {
             position: absolute;
             bottom: 0;
@@ -232,4 +206,192 @@
 @keyframes rotate {
     0% {transform: translateX(-50%) rotate(0deg);}
     100% {transform: translateX(-50%) rotate(360deg);}
+}
+
+
+
+@media screen and (max-width: 1919px) {
+    #sitemap {
+        height: auto;
+        position: relative;
+        flex-direction: column;
+    
+        .sitemap-close {
+            position: fixed;
+            right: 50px;
+            z-index: 2;
+        }
+    
+        .sitemap-left {
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            background-color: $mainColor;
+            padding: 0 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.1);
+    
+            >h2 {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                color: #fff;
+                position: relative;
+                cursor: default;
+    
+                &::before {
+                    display: block;
+                    content: '';
+                    width: 80px;
+                    height: 80px;
+                    position: absolute;
+                    top: -100px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background-image: url('../img/logo/white.svg');
+                    background-size: cover;
+                    cursor: pointer;
+                    animation: rotate 30s linear infinite;
+                }
+    
+                &:hover {
+                    &::before {
+                        animation-play-state: paused;
+                    }
+                }
+    
+                >img {
+                    width: 80%;
+                }
+    
+                >span {
+                    font: 30px/1 'NotoSansKR';
+                }
+            }
+    
+    
+            >p {
+                display: none;
+            }
+        }
+    
+        .sitemap-right {
+            width: 85%;
+            height: 100%;
+            padding: 100px;
+            margin: 0 auto;
+    
+            .sitemap-1depth {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: space-around;
+    
+                >li {
+                    flex: 1;
+    
+                    >a {
+                        display: flex;
+                        width: 100%;
+                        height: 100px;
+                        align-items: center;
+                        gap: 10px;
+                        font: bold 30px/1 'NotoSansKR';
+                        color: $subColor;
+    
+                        >span {
+                            font: bold 18px/1 'NotoSanaKR';
+                            color: $mainColor;
+                        }
+                    }
+    
+                    .sitemap-2depth {
+                        width: 100%;
+    
+                        >li {
+                            >a {
+                                display: flex;
+                                width: 100%;
+                                height: 50px;
+                                align-items: center;
+                                font: bold 18px/1 'NotoSansKR';
+                                color: $subColor;
+    
+                                &::before {
+                                    display: block;
+                                    content: '·';
+                                    margin: 0 10px;
+                                }
+                            }
+    
+                            .sitemap-3depth {
+                                width: 100%;
+    
+                                >li {
+                                    margin-left: 10px;
+                                    width: 100%;
+                                    // height: auto;
+                                    position: relative;
+    
+                                    &::before {
+                                        display: block;
+                                        content: '';
+                                        width: 1px;
+                                        height: 100%;
+                                        background-color: $mainColor;
+                                        position: absolute;
+                                        left: 0px;
+                                    }
+    
+                                    >a {
+                                        display: flex;
+                                        align-items: center;
+                                        width: 100%;
+                                        height: 30px;
+                                        font: 16px/1 'NotoSansKR';
+                                        color: #000;
+                                        margin-left: 15px;
+                                    }
+    
+                                    .sitemap-4depth {
+                                        display: flex;
+                                        gap: 20px;
+                                        margin-left: 20px;
+                                        padding-bottom: 20px;
+    
+                                        >li {
+                                            >a {
+                                                position: relative;
+                                                display: block;
+                                                margin-left: 7px;
+                                                font: 15px/30px 'NotoSansKR';
+                                                color: #888;
+    
+                                                &::before {
+                                                    display: block;
+                                                    content: '·';
+                                                    position: absolute;
+                                                    left: -7px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(4) {
+                        flex: 1.5;
+                    }
+                }
+            }
+        }
+    
+    }
 }
