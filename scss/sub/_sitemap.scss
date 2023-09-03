@@ -210,188 +210,188 @@
 
 
 
-@media screen and (max-width: 1919px) {
-    #sitemap {
-        height: auto;
-        position: relative;
-        flex-direction: column;
+// @media screen and (max-width: 1919px) {
+//     #sitemap {
+//         height: auto;
+//         position: relative;
+//         flex-direction: column;
     
-        .sitemap-close {
-            position: fixed;
-            right: 50px;
-            z-index: 2;
-        }
+//         .sitemap-close {
+//             position: fixed;
+//             right: 50px;
+//             z-index: 2;
+//         }
     
-        .sitemap-left {
-            position: fixed;
-            width: 100%;
-            height: 100px;
-            background-color: $mainColor;
-            padding: 0 50px;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.1);
+//         .sitemap-left {
+//             position: fixed;
+//             width: 100%;
+//             height: 100px;
+//             background-color: $mainColor;
+//             padding: 0 50px;
+//             display: flex;
+//             flex-direction: row;
+//             justify-content: space-between;
+//             align-items: center;
+//             box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.1);
     
-            >h2 {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: 10px;
-                color: #fff;
-                position: relative;
-                cursor: default;
+//             >h2 {
+//                 display: flex;
+//                 flex-direction: row;
+//                 align-items: center;
+//                 gap: 10px;
+//                 color: #fff;
+//                 position: relative;
+//                 cursor: default;
     
-                &::before {
-                    display: block;
-                    content: '';
-                    width: 80px;
-                    height: 80px;
-                    position: absolute;
-                    top: -100px;
-                    left: 50%;
-                    transform: translateX(-50%);
-                    background-image: url('../img/logo/white.svg');
-                    background-size: cover;
-                    cursor: pointer;
-                    animation: rotate 30s linear infinite;
-                }
+//                 &::before {
+//                     display: block;
+//                     content: '';
+//                     width: 80px;
+//                     height: 80px;
+//                     position: absolute;
+//                     top: -100px;
+//                     left: 50%;
+//                     transform: translateX(-50%);
+//                     background-image: url('../img/logo/white.svg');
+//                     background-size: cover;
+//                     cursor: pointer;
+//                     animation: rotate 30s linear infinite;
+//                 }
     
-                &:hover {
-                    &::before {
-                        animation-play-state: paused;
-                    }
-                }
+//                 &:hover {
+//                     &::before {
+//                         animation-play-state: paused;
+//                     }
+//                 }
     
-                >img {
-                    width: 80%;
-                }
+//                 >img {
+//                     width: 80%;
+//                 }
     
-                >span {
-                    font: 30px/1 'NotoSansKR';
-                }
-            }
+//                 >span {
+//                     font: 30px/1 'NotoSansKR';
+//                 }
+//             }
     
     
-            >p {
-                display: none;
-            }
-        }
+//             >p {
+//                 display: none;
+//             }
+//         }
     
-        .sitemap-right {
-            width: 85%;
-            height: 100%;
-            padding: 100px;
-            margin: 0 auto;
+//         .sitemap-right {
+//             width: 85%;
+//             height: 100%;
+//             padding: 100px;
+//             margin: 0 auto;
     
-            .sitemap-1depth {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                justify-content: space-around;
+//             .sitemap-1depth {
+//                 width: 100%;
+//                 height: 100%;
+//                 display: flex;
+//                 justify-content: space-around;
     
-                >li {
-                    flex: 1;
+//                 >li {
+//                     flex: 1;
     
-                    >a {
-                        display: flex;
-                        width: 100%;
-                        height: 100px;
-                        align-items: center;
-                        gap: 10px;
-                        font: bold 30px/1 'NotoSansKR';
-                        color: $subColor;
+//                     >a {
+//                         display: flex;
+//                         width: 100%;
+//                         height: 100px;
+//                         align-items: center;
+//                         gap: 10px;
+//                         font: bold 30px/1 'NotoSansKR';
+//                         color: $subColor;
     
-                        >span {
-                            font: bold 18px/1 'NotoSanaKR';
-                            color: $mainColor;
-                        }
-                    }
+//                         >span {
+//                             font: bold 18px/1 'NotoSanaKR';
+//                             color: $mainColor;
+//                         }
+//                     }
     
-                    .sitemap-2depth {
-                        width: 100%;
+//                     .sitemap-2depth {
+//                         width: 100%;
     
-                        >li {
-                            >a {
-                                display: flex;
-                                width: 100%;
-                                height: 50px;
-                                align-items: center;
-                                font: bold 18px/1 'NotoSansKR';
-                                color: $subColor;
+//                         >li {
+//                             >a {
+//                                 display: flex;
+//                                 width: 100%;
+//                                 height: 50px;
+//                                 align-items: center;
+//                                 font: bold 18px/1 'NotoSansKR';
+//                                 color: $subColor;
     
-                                &::before {
-                                    display: block;
-                                    content: '·';
-                                    margin: 0 10px;
-                                }
-                            }
+//                                 &::before {
+//                                     display: block;
+//                                     content: '·';
+//                                     margin: 0 10px;
+//                                 }
+//                             }
     
-                            .sitemap-3depth {
-                                width: 100%;
+//                             .sitemap-3depth {
+//                                 width: 100%;
     
-                                >li {
-                                    margin-left: 10px;
-                                    width: 100%;
-                                    // height: auto;
-                                    position: relative;
+//                                 >li {
+//                                     margin-left: 10px;
+//                                     width: 100%;
+//                                     // height: auto;
+//                                     position: relative;
     
-                                    &::before {
-                                        display: block;
-                                        content: '';
-                                        width: 1px;
-                                        height: 100%;
-                                        background-color: $mainColor;
-                                        position: absolute;
-                                        left: 0px;
-                                    }
+//                                     &::before {
+//                                         display: block;
+//                                         content: '';
+//                                         width: 1px;
+//                                         height: 100%;
+//                                         background-color: $mainColor;
+//                                         position: absolute;
+//                                         left: 0px;
+//                                     }
     
-                                    >a {
-                                        display: flex;
-                                        align-items: center;
-                                        width: 100%;
-                                        height: 30px;
-                                        font: 16px/1 'NotoSansKR';
-                                        color: #000;
-                                        margin-left: 15px;
-                                    }
+//                                     >a {
+//                                         display: flex;
+//                                         align-items: center;
+//                                         width: 100%;
+//                                         height: 30px;
+//                                         font: 16px/1 'NotoSansKR';
+//                                         color: #000;
+//                                         margin-left: 15px;
+//                                     }
     
-                                    .sitemap-4depth {
-                                        display: flex;
-                                        gap: 20px;
-                                        margin-left: 20px;
-                                        padding-bottom: 20px;
+//                                     .sitemap-4depth {
+//                                         display: flex;
+//                                         gap: 20px;
+//                                         margin-left: 20px;
+//                                         padding-bottom: 20px;
     
-                                        >li {
-                                            >a {
-                                                position: relative;
-                                                display: block;
-                                                margin-left: 7px;
-                                                font: 15px/30px 'NotoSansKR';
-                                                color: #888;
+//                                         >li {
+//                                             >a {
+//                                                 position: relative;
+//                                                 display: block;
+//                                                 margin-left: 7px;
+//                                                 font: 15px/30px 'NotoSansKR';
+//                                                 color: #888;
     
-                                                &::before {
-                                                    display: block;
-                                                    content: '·';
-                                                    position: absolute;
-                                                    left: -7px;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
+//                                                 &::before {
+//                                                     display: block;
+//                                                     content: '·';
+//                                                     position: absolute;
+//                                                     left: -7px;
+//                                                 }
+//                                             }
+//                                         }
+//                                     }
+//                                 }
     
-                            }
-                        }
-                    }
+//                             }
+//                         }
+//                     }
     
-                    &:nth-of-type(4) {
-                        flex: 1.5;
-                    }
-                }
-            }
-        }
+//                     &:nth-of-type(4) {
+//                         flex: 1.5;
+//                     }
+//                 }
+//             }
+//         }
     
-    }
-}
+//     }
+// }

@@ -94,7 +94,7 @@
 #field {
     position: relative;
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     >h2 {
         position: absolute;
@@ -501,4 +501,362 @@
 @keyframes opacity {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+@media screen and (max-width: 1200px) {
+    #main-visual {
+        .frame-name {
+            >li {
+                >a {
+                    font: 18px/1 'NotoSansKR';
+                }
+            }
+        }
+    }
+    
+    #field {
+
+        >h2 {
+            font: 20px/1 'NotoSansKR';
+        }
+    
+        .frame-index {
+            left: 50px;
+            width: 70%;
+            height: 200px;
+    
+            >li {
+    
+                >a {
+                    font: 26px/1 'NotoSansKR';
+    
+                    >span {
+                        font-size: 16px;
+                    }
+                }
+    
+                .bar {
+                    height: 3px;
+                }
+    
+                &.on {
+                    padding-top: 50px;
+                    >a {
+                        font: 40px/1 'NotoSansKR';
+    
+                        >span {
+                            font-size: 26px;
+                        }
+                    }
+    
+                }
+    
+            }
+            &.on {
+                top: 35%;
+                left: 50%;
+                width: 70vw;
+                height: 100px;
+                transform: translateX(-50%);
+                gap: 20px;
+    
+                >li {
+                    flex: 1;
+                    height: 100%;
+                    padding-top: 0;
+                    align-items: center;
+                    background-color: $mainColor;
+    
+                    >a {
+                        font: 26px/1 'NotoSansKR';
+                        color: #fff;
+    
+                        >span {
+                            font-size: 20px;
+                        }
+                    }
+    
+                    .bar {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    
+    .field-img {
+        position: absolute;
+        display: flex;
+        top: 25%;
+        left: 50%;
+        width: 70vw;
+        height: 45vh;
+        transform: translateX(-50%);
+        margin-top: 150px;
+        gap: 20px;
+        opacity: 0;
+
+        >li {
+            flex: 1;
+            width: 100%;
+            height: 100%;
+            position: relative;
+
+            .field-txt {
+                position: absolute;
+                width: 100%;
+                top: -120px;
+                left: 10px;
+
+                span {
+                    color: $subColor;
+
+                    &.field-num {
+                        font: bold 3vw/1 "arial";
+                    }
+
+                    &:nth-of-type(2) {
+                        margin-left: 10px;
+                        font: 2vw/1 "NotoSansKR";
+                    }
+                }
+
+                &::after {
+                    display: block;
+                    content: '';
+                    width: 3vw;
+                    height: 3vw;
+                    background-image: url('../img/icon/ic-project01.svg');
+                    background-size: cover;
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    opacity: .5;
+                }
+
+            }
+            
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: 0.5s;
+
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            &:nth-of-type(2) {
+                .field-txt {
+                    &::after {
+                        background-image: url('../img/icon/ic-project02.svg');
+                    }
+                }
+            }
+            &:nth-of-type(3) {
+                .field-txt {
+                    &::after {
+                        background-image: url('../img/icon/ic-project03.svg');
+                    }
+                }
+            }
+            &:nth-of-type(4) {
+                .field-txt {
+                    &::after {
+                        background-image: url('../img/icon/ic-project04.svg');
+                    }
+                }
+            }
+            
+        }
+
+        &.on {
+            animation: opacity 1s linear;
+            animation-delay: 0.5s;
+            animation-fill-mode: forwards;
+        }
+    }
+    }
+
+    #news {
+        position: relative;
+        width: 80%;
+        height: 100vh;
+        margin: 0 auto;
+        padding: 150px 0 50px;
+    
+        >h2 {
+            font: 24px/1 'NotoSansKR';
+            margin-bottom: 50px;
+    
+            &::before {
+                display: inline-block;
+                content: '';
+                width: 18px;
+                height: 18px;
+                background-image: url('../img/logo/color.svg');
+                background-size: cover;
+                margin-right: 10px;
+            }
+        }
+    
+        >article {
+            width: 100%;
+            height: calc(100% - 74px);
+    
+            >.news-nav {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                
+                >li {
+                    
+                    >a {
+                        display: block;
+                        width: 150px;
+                        height: 40px;
+                        text-align: center;
+                        font: bold 20px/40px 'NotoSansKR';
+                    }
+    
+                    &.on {
+                        >a {
+                            color: $mainColor;
+    
+                            &::after {
+                                display: block;
+                                content: '';
+                                width: 100%;
+                                height: 5px;
+                                background-color: $mainColor;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            >.news-list {
+                padding-top: 50px;
+                width: 100%;
+                height: calc(100% - 50px);
+    
+                >li {
+                    display: none;
+                    width: auto;
+                    height: 100%;
+    
+    
+                    >ul{
+                        width: calc(100%);
+                        height: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                        gap: 20px;
+    
+                        >li {
+                            width: calc(100%/3 - 20px);
+                            height: calc(50% - 20px);
+                            cursor: pointer;
+    
+                            .img {
+                                width: 100%;
+                                height: 60%;
+                                
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                    object-fit: cover;
+                                }
+                            }
+    
+                            .txt {
+                                width: 100%;
+                                margin-top: 20px;
+    
+                                >p {
+                                    font: 18px/1 'NotoSansKR';
+                                    width: 100%;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                    white-space: nowrap;
+                                }
+    
+                                >span {
+                                    display: block;
+                                    color: #aaa;
+                                    margin-top: 5px;
+                                }
+                            }
+                        }
+                    }
+    
+                    &.on {
+                        display: flex;
+                    }
+                }
+    
+            }
+        }
+    
+    }
+    
+    #villiv {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image: url('../img/visual/main_villiv\ 백그라운드.jpg');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    
+        &::after {
+            display: block;
+            content: '';
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            opacity: .4;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+    
+        >.villiv-txt {
+            width: 70%;
+            height: 100%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 300px 0;
+            z-index: 1;
+    
+            >span {
+                font: 20px/1 'NotoSansKR';
+                color: #f7f7f7;
+            }
+    
+            >h2 {
+                font: bold 40px/2 'NotoSansKR';
+                color: #f7f7f7;
+            }
+    
+            >p {
+                font: 16px/2 'NotoSansKR';
+                color: #f7f7f7;
+            }
+        }
+    }
 }

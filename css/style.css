@@ -109,7 +109,7 @@ a {
 #field {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 #field > h2 {
   position: absolute;
@@ -446,6 +446,278 @@ a {
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (max-width: 1200px) {
+  #main-visual .frame-name > li > a {
+    font: 18px/1 "NotoSansKR";
+  }
+  #field > h2 {
+    font: 20px/1 "NotoSansKR";
+  }
+  #field .frame-index {
+    left: 50px;
+    width: 70%;
+    height: 200px;
+  }
+  #field .frame-index > li > a {
+    font: 26px/1 "NotoSansKR";
+  }
+  #field .frame-index > li > a > span {
+    font-size: 16px;
+  }
+  #field .frame-index > li .bar {
+    height: 3px;
+  }
+  #field .frame-index > li.on {
+    padding-top: 50px;
+  }
+  #field .frame-index > li.on > a {
+    font: 40px/1 "NotoSansKR";
+  }
+  #field .frame-index > li.on > a > span {
+    font-size: 26px;
+  }
+  #field .frame-index.on {
+    top: 35%;
+    left: 50%;
+    width: 70vw;
+    height: 100px;
+    transform: translateX(-50%);
+    gap: 20px;
+  }
+  #field .frame-index.on > li {
+    flex: 1;
+    height: 100%;
+    padding-top: 0;
+    align-items: center;
+    background-color: #DA2128;
+  }
+  #field .frame-index.on > li > a {
+    font: 26px/1 "NotoSansKR";
+    color: #fff;
+  }
+  #field .frame-index.on > li > a > span {
+    font-size: 20px;
+  }
+  #field .frame-index.on > li .bar {
+    display: none;
+  }
+  #field .field-img {
+    position: absolute;
+    display: flex;
+    top: 25%;
+    left: 50%;
+    width: 70vw;
+    height: 45vh;
+    transform: translateX(-50%);
+    margin-top: 150px;
+    gap: 20px;
+    opacity: 0;
+  }
+  #field .field-img > li {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  #field .field-img > li .field-txt {
+    position: absolute;
+    width: 100%;
+    top: -120px;
+    left: 10px;
+  }
+  #field .field-img > li .field-txt span {
+    color: #4F5959;
+  }
+  #field .field-img > li .field-txt span.field-num {
+    font: bold 3vw/1 "arial";
+  }
+  #field .field-img > li .field-txt span:nth-of-type(2) {
+    margin-left: 10px;
+    font: 2vw/1 "NotoSansKR";
+  }
+  #field .field-img > li .field-txt::after {
+    display: block;
+    content: "";
+    width: 3vw;
+    height: 3vw;
+    background-image: url("../img/icon/ic-project01.svg");
+    background-size: cover;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+  }
+  #field .field-img > li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #field .field-img > li a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  #field .field-img > li a img:hover {
+    transform: scale(1.2);
+  }
+  #field .field-img > li:nth-of-type(2) .field-txt::after {
+    background-image: url("../img/icon/ic-project02.svg");
+  }
+  #field .field-img > li:nth-of-type(3) .field-txt::after {
+    background-image: url("../img/icon/ic-project03.svg");
+  }
+  #field .field-img > li:nth-of-type(4) .field-txt::after {
+    background-image: url("../img/icon/ic-project04.svg");
+  }
+  #field .field-img.on {
+    animation: opacity 1s linear;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+  }
+  #news {
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 150px 0 50px;
+  }
+  #news > h2 {
+    font: 24px/1 "NotoSansKR";
+    margin-bottom: 50px;
+  }
+  #news > h2::before {
+    display: inline-block;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/logo/color.svg");
+    background-size: cover;
+    margin-right: 10px;
+  }
+  #news > article {
+    width: 100%;
+    height: calc(100% - 74px);
+  }
+  #news > article > .news-nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+  }
+  #news > article > .news-nav > li > a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    text-align: center;
+    font: bold 20px/40px "NotoSansKR";
+  }
+  #news > article > .news-nav > li.on > a {
+    color: #DA2128;
+  }
+  #news > article > .news-nav > li.on > a::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 5px;
+    background-color: #DA2128;
+  }
+  #news > article > .news-list {
+    padding-top: 50px;
+    width: 100%;
+    height: calc(100% - 50px);
+  }
+  #news > article > .news-list > li {
+    display: none;
+    width: auto;
+    height: 100%;
+  }
+  #news > article > .news-list > li > ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  #news > article > .news-list > li > ul > li {
+    width: calc(33.3333333333% - 20px);
+    height: calc(50% - 20px);
+    cursor: pointer;
+  }
+  #news > article > .news-list > li > ul > li .img {
+    width: 100%;
+    height: 60%;
+  }
+  #news > article > .news-list > li > ul > li .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #news > article > .news-list > li > ul > li .txt {
+    width: 100%;
+    margin-top: 20px;
+  }
+  #news > article > .news-list > li > ul > li .txt > p {
+    font: 18px/1 "NotoSansKR";
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  #news > article > .news-list > li > ul > li .txt > span {
+    display: block;
+    color: #aaa;
+    margin-top: 5px;
+  }
+  #news > article > .news-list > li.on {
+    display: flex;
+  }
+  #villiv {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/visual/main_villiv 백그라운드.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+  #villiv::after {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  #villiv > .villiv-txt {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 300px 0;
+    z-index: 1;
+  }
+  #villiv > .villiv-txt > span {
+    font: 20px/1 "NotoSansKR";
+    color: #f7f7f7;
+  }
+  #villiv > .villiv-txt > h2 {
+    font: bold 40px/2 "NotoSansKR";
+    color: #f7f7f7;
+  }
+  #villiv > .villiv-txt > p {
+    font: 16px/2 "NotoSansKR";
+    color: #f7f7f7;
   }
 }
 #sub-location {
@@ -2277,157 +2549,6 @@ a {
   }
   100% {
     transform: translateX(-50%) rotate(360deg);
-  }
-}
-@media screen and (max-width: 1919px) {
-  #sitemap {
-    height: auto;
-    position: relative;
-    flex-direction: column;
-  }
-  #sitemap .sitemap-close {
-    position: fixed;
-    right: 50px;
-    z-index: 2;
-  }
-  #sitemap .sitemap-left {
-    position: fixed;
-    width: 100%;
-    height: 100px;
-    background-color: #DA2128;
-    padding: 0 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.1);
-  }
-  #sitemap .sitemap-left > h2 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    position: relative;
-    cursor: default;
-  }
-  #sitemap .sitemap-left > h2::before {
-    display: block;
-    content: "";
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-image: url("../img/logo/white.svg");
-    background-size: cover;
-    cursor: pointer;
-    animation: rotate 30s linear infinite;
-  }
-  #sitemap .sitemap-left > h2:hover::before {
-    animation-play-state: paused;
-  }
-  #sitemap .sitemap-left > h2 > img {
-    width: 80%;
-  }
-  #sitemap .sitemap-left > h2 > span {
-    font: 30px/1 "NotoSansKR";
-  }
-  #sitemap .sitemap-left > p {
-    display: none;
-  }
-  #sitemap .sitemap-right {
-    width: 85%;
-    height: 100%;
-    padding: 100px;
-    margin: 0 auto;
-  }
-  #sitemap .sitemap-right .sitemap-1depth {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li {
-    flex: 1;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li > a {
-    display: flex;
-    width: 100%;
-    height: 100px;
-    align-items: center;
-    gap: 10px;
-    font: bold 30px/1 "NotoSansKR";
-    color: #4F5959;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li > a > span {
-    font: bold 18px/1 "NotoSanaKR";
-    color: #DA2128;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth {
-    width: 100%;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li > a {
-    display: flex;
-    width: 100%;
-    height: 50px;
-    align-items: center;
-    font: bold 18px/1 "NotoSansKR";
-    color: #4F5959;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li > a::before {
-    display: block;
-    content: "·";
-    margin: 0 10px;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth {
-    width: 100%;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li {
-    margin-left: 10px;
-    width: 100%;
-    position: relative;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li::before {
-    display: block;
-    content: "";
-    width: 1px;
-    height: 100%;
-    background-color: #DA2128;
-    position: absolute;
-    left: 0px;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li > a {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    height: 30px;
-    font: 16px/1 "NotoSansKR";
-    color: #000;
-    margin-left: 15px;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li .sitemap-4depth {
-    display: flex;
-    gap: 20px;
-    margin-left: 20px;
-    padding-bottom: 20px;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li .sitemap-4depth > li > a {
-    position: relative;
-    display: block;
-    margin-left: 7px;
-    font: 15px/30px "NotoSansKR";
-    color: #888;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li .sitemap-2depth > li .sitemap-3depth > li .sitemap-4depth > li > a::before {
-    display: block;
-    content: "·";
-    position: absolute;
-    left: -7px;
-  }
-  #sitemap .sitemap-right .sitemap-1depth > li:nth-of-type(4) {
-    flex: 1.5;
   }
 }
 .main-bg {
