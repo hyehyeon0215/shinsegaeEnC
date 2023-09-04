@@ -22,7 +22,6 @@
     justify-content: space-between;
     padding: 0 30px;
     background-color: rgba(0, 0, 0, .5);
-    overflow: hidden;
     transition: height 0.5s;
 
     h1 {
@@ -121,6 +120,87 @@
 
     .mobile-nav {
         display: none;
+
+        &.mobile {
+            display: block;
+            position: absolute;
+            right: 0;
+            z-index: 3;
+            width: 30%;
+            height: 100vh;
+            background-color: $mainColor;
+
+            .mobile-close {
+                width: 70px;
+                height: 70px;
+                position: absolute;
+                right: 0;
+                text-align: center;
+
+                >i {
+                    font-size: 25px;
+                    line-height: 70px;
+                    color: #fff;
+                }
+            }
+
+            >ul {
+
+                width: 100%;
+                height: auto;
+                margin-top: 70px;
+                width: 100%;
+                text-align: center;
+
+                >li {
+                    width: 80%;
+                    margin: 0 auto;
+                    border-top: 1px solid #e7e7e7;
+                    >a {
+                        display: block;
+                        width: 100%;
+                        height: 60px;
+                        font: 20px/60px 'NotoSansKR';
+                        color: #fff;
+                        text-align: center;
+                    }
+
+                    
+                    >ul {
+                        width: 100%;
+                        height: auto;
+                        display: none;
+                        background-color: #fff;
+
+                        >li {
+                            width: 100%;
+                            height: 100%;
+                            border-bottom: none;
+                            >a {
+                                display: block;
+                                width: 100%;
+                                height: 40px;
+                                font: 16px/40px 'NotoSansKR';
+                            }
+                        }
+                    }
+
+                    &:first-of-type {
+                        border-top: none;
+                    }
+
+                    &.on {
+                        width: 100%;
+                        background-color: $subColor;
+                        border-top: none;
+
+                        >ul {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     #search-txt {
@@ -185,7 +265,7 @@
     
         }
 
-        nav {
+        .desktop-nav {
             .header-gnb {
                 >li {
                     width: 160px;
@@ -204,6 +284,7 @@
     
                     .header-sub {
                         visibility: visible;
+                        text-align: center;
                     }
     
                     &:nth-of-type(1) {
@@ -283,7 +364,7 @@
     
         }
     
-        nav {
+        .desktop-nav {
             .header-gnb {
                 >li {
                     >a {
@@ -356,7 +437,7 @@
     
         }
 
-        nav {
+        .desktop-nav {
             display: none;
         }
 
@@ -683,6 +764,42 @@
         &.on {
             nav {
                 display: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mobile-nav {
+        &.mobile {
+            .mobile-close {
+                >i {
+                    font-size: 20px;
+                }
+            }
+
+            >ul {
+
+                >li {
+                    >a {
+                        font: 16px/60px 'NotoSansKR';
+                    }
+
+                    
+                    >ul {
+
+                        >li {
+
+                            >a {
+                                font: 14px/40px 'NotoSansKR';
+                            }
+                        }
+                    }
+
+                    &:first-of-type {
+                        border-top: none;
+                    }
+                }
             }
         }
     }

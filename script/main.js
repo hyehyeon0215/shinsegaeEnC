@@ -29,6 +29,35 @@ const len = frames.length - 1;
 const news_nav = document.querySelectorAll(".news-nav > li");
 const news_list = document.querySelectorAll(".news-list > li");
 
+const sitemap_btn = document.querySelector(".sitemap-btn");
+const mobile_nav = document.querySelector(".mobile-nav");
+const mobile_li = mobile_nav.querySelectorAll("ul>li");
+let size = screen.availWidth;
+const mobile_size = 768;
+const mobile_close = document.querySelector(".mobile-close");
+
+
+if(size < mobile_size) {
+    sitemap_btn.addEventListener("click", (e)=>{
+        e.preventDefault();
+        mobile_nav.classList.add("mobile");
+        bg.classList.add('on');
+
+        mobile_close.addEventListener("click", (e)=> {
+            e.preventDefault();
+            mobile_nav.classList.remove("mobile");
+        })
+    })
+}
+
+mobile_li.forEach((el, index)=>{
+    el.addEventListener("click", ()=>{
+        mobile_li.forEach((el)=>{
+            el.classList.remove("on");
+        })
+        el.classList.add("on");
+    })
+})
 
 let num = 0;
 let timer = null;

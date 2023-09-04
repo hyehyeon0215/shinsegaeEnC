@@ -1,11 +1,5 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "NotoSansKR";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/noto-sans-kr-v36-korean-regular.eot");
-  src: url("../fonts/noto-sans-kr-v36-korean-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-kr-v36-korean-regular.woff2") format("woff2"), url("../fonts/noto-sans-kr-v36-korean-regular.woff") format("woff"), url("../fonts/noto-sans-kr-v36-korean-regular.ttf") format("truetype"), url("../fonts/noto-sans-kr-v36-korean-regular.svg#NotoSansKR") format("svg");
-}
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -2752,7 +2746,6 @@ a {
   justify-content: space-between;
   padding: 0 30px;
   background-color: rgba(0, 0, 0, 0.5);
-  overflow: hidden;
   transition: height 0.5s;
 }
 #header h1 a {
@@ -2830,6 +2823,75 @@ a {
 #header .mobile-nav {
   display: none;
 }
+#header .mobile-nav.mobile {
+  display: block;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+  width: 30%;
+  height: 100vh;
+  background-color: #DA2128;
+}
+#header .mobile-nav.mobile .mobile-close {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+#header .mobile-nav.mobile .mobile-close > i {
+  font-size: 25px;
+  line-height: 70px;
+  color: #fff;
+}
+#header .mobile-nav.mobile > ul {
+  width: 100%;
+  height: auto;
+  margin-top: 70px;
+  width: 100%;
+  text-align: center;
+}
+#header .mobile-nav.mobile > ul > li {
+  width: 80%;
+  margin: 0 auto;
+  border-top: 1px solid #e7e7e7;
+}
+#header .mobile-nav.mobile > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 60px;
+  font: 20px/60px "NotoSansKR";
+  color: #fff;
+  text-align: center;
+}
+#header .mobile-nav.mobile > ul > li > ul {
+  width: 100%;
+  height: auto;
+  display: none;
+  background-color: #fff;
+}
+#header .mobile-nav.mobile > ul > li > ul > li {
+  width: 100%;
+  height: 100%;
+  border-bottom: none;
+}
+#header .mobile-nav.mobile > ul > li > ul > li > a {
+  display: block;
+  width: 100%;
+  height: 40px;
+  font: 16px/40px "NotoSansKR";
+}
+#header .mobile-nav.mobile > ul > li:first-of-type {
+  border-top: none;
+}
+#header .mobile-nav.mobile > ul > li.on {
+  width: 100%;
+  background-color: #4F5959;
+  border-top: none;
+}
+#header .mobile-nav.mobile > ul > li.on > ul {
+  display: block;
+}
 #header #search-txt {
   display: none;
 }
@@ -2881,26 +2943,27 @@ a {
 #header.on h1 a::before {
   background-image: url("../img/logo/color.svg");
 }
-#header.on nav .header-gnb > li {
+#header.on .desktop-nav .header-gnb > li {
   width: 160px;
   height: 100px;
   text-align: center;
   display: flex;
   align-items: center;
 }
-#header.on nav .header-gnb > li > a {
+#header.on .desktop-nav .header-gnb > li > a {
   height: 40px;
   font: bold 16px/1 "NotoSansKR";
   color: #4F5959;
   position: relative;
 }
-#header.on nav .header-gnb > li .header-sub {
+#header.on .desktop-nav .header-gnb > li .header-sub {
   visibility: visible;
+  text-align: center;
 }
-#header.on nav .header-gnb > li:nth-of-type(1) .header-sub::before {
+#header.on .desktop-nav .header-gnb > li:nth-of-type(1) .header-sub::before {
   display: none;
 }
-#header.on nav .header-gnb > li:hover > a::after {
+#header.on .desktop-nav .header-gnb > li:hover > a::after {
   display: block;
   content: "";
   position: absolute;
@@ -2946,7 +3009,7 @@ a {
 #header.white h1 a::before {
   background-image: url("../img/logo/color.svg");
 }
-#header.white nav .header-gnb > li > a {
+#header.white .desktop-nav .header-gnb > li > a {
   color: #4F5959;
 }
 #header.white .header-icon li > a i {
@@ -2995,7 +3058,7 @@ a {
   height: 40px;
   background-image: url("../img/logo/color.svg");
 }
-#header.search nav {
+#header.search .desktop-nav {
   display: none;
 }
 #header.search #search-txt {
@@ -3193,6 +3256,20 @@ a {
   }
   #header.on nav {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .mobile-nav.mobile .mobile-close > i {
+    font-size: 20px;
+  }
+  .mobile-nav.mobile > ul > li > a {
+    font: 16px/60px "NotoSansKR";
+  }
+  .mobile-nav.mobile > ul > li > ul > li > a {
+    font: 14px/40px "NotoSansKR";
+  }
+  .mobile-nav.mobile > ul > li:first-of-type {
+    border-top: none;
   }
 }
 @media screen and (max-width: 400px) {

@@ -1,14 +1,4 @@
-@font-face {
-    font-family: 'NotoSansKR';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/noto-sans-kr-v36-korean-regular.eot');
-    src: url('../fonts/noto-sans-kr-v36-korean-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/noto-sans-kr-v36-korean-regular.woff2') format('woff2'),
-         url('../fonts/noto-sans-kr-v36-korean-regular.woff') format('woff'),
-         url('../fonts/noto-sans-kr-v36-korean-regular.ttf') format('truetype'),
-         url('../fonts/noto-sans-kr-v36-korean-regular.svg#NotoSansKR') format('svg');
-}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
 * {
     margin: 0; padding: 0; box-sizing: border-box;
