@@ -1,14 +1,16 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
 @font-face {
-  font-family: "AppleSD";
-  src: url("../font/AppleSDGothicNeoR.ttf") format("truetype");
+  font-family: "NotoSansKR";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/noto-sans-kr-v36-korean-regular.eot");
+  src: url("../fonts/noto-sans-kr-v36-korean-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/noto-sans-kr-v36-korean-regular.woff2") format("woff2"), url("../fonts/noto-sans-kr-v36-korean-regular.woff") format("woff"), url("../fonts/noto-sans-kr-v36-korean-regular.ttf") format("truetype"), url("../fonts/noto-sans-kr-v36-korean-regular.svg#NotoSansKR") format("svg");
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Noto Sans KR", "AppleSDGothicNeo", sans-serif;
+  font-family: "NotoSansKR";
 }
 
 ol, ul, li {
@@ -2596,18 +2598,18 @@ a {
 #header h1.main-logo a::before {
   background-image: url("../img/logo/white.svg");
 }
-#header nav .header-gnb {
+#header .desktop-nav .header-gnb {
   display: flex;
   align-items: center;
   position: relative;
   width: 100%;
   height: 100px;
 }
-#header nav .header-gnb > li {
+#header .desktop-nav .header-gnb > li {
   width: 160px;
   height: 100px;
 }
-#header nav .header-gnb > li > a {
+#header .desktop-nav .header-gnb > li > a {
   display: flex;
   width: 160px;
   height: 100px;
@@ -2616,17 +2618,17 @@ a {
   font: bold 16px/1 "NotoSansKR";
   color: #fff;
 }
-#header nav .header-gnb .header-sub {
+#header .desktop-nav .header-gnb .header-sub {
   visibility: hidden;
   position: absolute;
   display: block;
   top: 120px;
 }
-#header nav .header-gnb .header-sub > li {
+#header .desktop-nav .header-gnb .header-sub > li {
   width: 160px;
   height: 35px;
 }
-#header nav .header-gnb .header-sub > li > a {
+#header .desktop-nav .header-gnb .header-sub > li > a {
   display: flex;
   width: 100%;
   height: 100%;
@@ -2634,13 +2636,13 @@ a {
   align-items: center;
   font: 15px/1 "NotoSansKR";
 }
-#header nav .header-gnb .header-sub > li > a:hover {
+#header .desktop-nav .header-gnb .header-sub > li > a:hover {
   font-weight: bold;
 }
-#header nav .header-gnb .header-sub > li > a.sub-color {
+#header .desktop-nav .header-gnb .header-sub > li > a.sub-color {
   color: #DA2128;
 }
-#header nav .header-gnb .header-sub::before {
+#header .desktop-nav .header-gnb .header-sub::before {
   display: block;
   content: "";
   position: absolute;
@@ -2648,6 +2650,9 @@ a {
   width: 0.5px;
   height: 100%;
   background-color: #eee;
+}
+#header .mobile-nav {
+  display: none;
 }
 #header #search-txt {
   display: none;

@@ -1,5 +1,5 @@
 const main_header = document.querySelector("#header");
-const gnb = main_header.querySelectorAll("nav > .header-gnb >li");
+const gnb = main_header.querySelectorAll(".desktop-nav > .header-gnb >li");
 const sub = main_header.querySelectorAll(".header-sub > li");
 const bg = document.querySelector(".main-bg");
 

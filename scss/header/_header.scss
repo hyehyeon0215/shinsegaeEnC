@@ -54,7 +54,7 @@
 
     }
 
-    nav {
+    .desktop-nav {
         .header-gnb {
             display: flex;
             align-items: center;
@@ -117,6 +117,10 @@
                 }
             }
         }
+    }
+
+    .mobile-nav {
+        display: none;
     }
 
     #search-txt {
