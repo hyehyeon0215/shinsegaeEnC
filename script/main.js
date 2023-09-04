@@ -33,7 +33,8 @@ const sitemap_btn = document.querySelector(".sitemap-btn");
 const mobile_nav = document.querySelector(".mobile-nav");
 const mobile_li = mobile_nav.querySelectorAll("ul>li");
 let size = screen.availWidth;
-const mobile_size = 768;
+const mobile_size = 769;
+const tablet = 1024;
 const mobile_close = document.querySelector(".mobile-close");
 
 
@@ -139,7 +140,7 @@ window.addEventListener("wheel", function(e) {
 
     clearTimeout(wheelTimer);
     wheelTimer = setTimeout(function() {
-  	    if(e.deltaY > 0) {
+          if(e.deltaY > 0) {
             if(scroll_index == scroll_section.length) {
                 return;
             }
