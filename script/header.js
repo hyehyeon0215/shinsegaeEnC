@@ -18,7 +18,6 @@ if(size < mobile_size) {
     sitemap_btn.addEventListener("click", (e)=>{
         e.preventDefault();
         mobile_nav.classList.add("mobile");
-        bg.classList.add('on');
     })
 
     mobile_close.addEventListener("click", (e)=> {
@@ -27,7 +26,7 @@ if(size < mobile_size) {
     })
 }
 
-mobile_li.forEach((el, index)=>{
+mobile_li.forEach((el)=>{
     el.addEventListener("click", ()=>{
         mobile_li.forEach((el)=>{
             el.classList.remove("on");

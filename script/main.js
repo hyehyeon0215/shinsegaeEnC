@@ -13,9 +13,9 @@ const frames = visual.querySelectorAll(".frame li");
 const frame_name = visual.querySelectorAll(".frame-name li");
 
 
-const main_header = document.querySelector("#header");
-const gnb = main_header.querySelectorAll("nav > .header-gnb >li");
-const sub = main_header.querySelectorAll(".header-sub > li");
+const header = document.querySelector("#header");
+const gnb = header.querySelectorAll(".desktop-nav > .header-gnb >li");
+const sub = header.querySelectorAll(".header-sub > li");
 const bg = document.querySelector(".main-bg");
 
 const field_img = document.querySelector(".field-img");
@@ -41,7 +41,6 @@ if(size < mobile_size) {
     sitemap_btn.addEventListener("click", (e)=>{
         e.preventDefault();
         mobile_nav.classList.add("mobile");
-        bg.classList.add('on');
 
         mobile_close.addEventListener("click", (e)=> {
             e.preventDefault();
@@ -50,7 +49,7 @@ if(size < mobile_size) {
     })
 }
 
-mobile_li.forEach((el, index)=>{
+mobile_li.forEach((el)=>{
     el.addEventListener("click", ()=>{
         mobile_li.forEach((el)=>{
             el.classList.remove("on");
@@ -94,13 +93,13 @@ function rolling() {
 
 gnb.forEach((el)=>{
     el.addEventListener("mouseenter", ()=>{
-        main_header.classList.add('on');
+        header.classList.add('on');
         bg.classList.add('on');
     })
 
-    main_header.addEventListener("mouseleave", ()=> {
-        if(main_header.classList.contains('on')) {
-            main_header.classList.remove('on');
+    header.addEventListener("mouseleave", ()=> {
+        if(header.classList.contains('on')) {
+            header.classList.remove('on');
             bg.classList.remove('on');
         }
     })
@@ -109,13 +108,13 @@ gnb.forEach((el)=>{
 
 
 search_btn.addEventListener("click", ()=> {
-    if(main_header.classList.contains('search')) {
-        main_header.classList.remove('search');
+    if(header.classList.contains('search')) {
+        header.classList.remove('search');
         bg.classList.remove('on');
     }
     else {
-        main_header.classList.remove('on');
-        main_header.classList.add('search');
+        header.classList.remove('on');
+        header.classList.add('search');
     
         if (!(bg.classList.contains('on'))) {
             bg.classList.add('on');
@@ -125,7 +124,7 @@ search_btn.addEventListener("click", ()=> {
 
 search_cls.addEventListener("click", (e)=>{
     e.preventDefault();
-    main_header.classList.remove('search');
+    header.classList.remove('search');
     bg.classList.remove('on');
 })
 
@@ -176,7 +175,7 @@ let isOn = true;
 
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > scroll_section[1].offsetTop - 10) {
-        main_header.classList.add('white');
+        header.classList.add('white');
         frame_idxbox.classList.add('on');
         field_img.classList.add('on');
         if (isOn) {
@@ -184,7 +183,7 @@ window.addEventListener("scroll", () => {
             setTimeout(field_counting, 500);
         }
     } else {
-        main_header.classList.remove('white');
+        header.classList.remove('white');
         frame_idxbox.classList.remove('on');
         field_img.classList.remove('on');
         isOn = true;

@@ -22,7 +22,7 @@
     justify-content: space-between;
     padding: 0 30px;
     background-color: rgba(0, 0, 0, .5);
-    transition: height 0.5s;
+    // transition: height 0.5s visibility 1s;
 
     h1 {
         a {
@@ -80,7 +80,6 @@
                 position: absolute;
                 display: block;
                 top: 120px;
-                
 
                 >li {
                     width: 160px;
@@ -770,39 +769,43 @@
 }
 
 @media screen and (max-width: 500px) {
-    .mobile-nav {
-        &.mobile {
-            .mobile-close {
-                >i {
-                    font-size: 20px;
-                }
-            }
 
-            >ul {
-
-                >li {
-                    >a {
-                        font: 16px/60px 'NotoSansKR';
+    #header {
+        .mobile-nav {
+            width: 50%;
+            &.mobile {
+                .mobile-close {
+                    >i {
+                        font-size: 20px;
                     }
-
-                    
-                    >ul {
-
-                        >li {
-
-                            >a {
-                                font: 14px/40px 'NotoSansKR';
+                }
+    
+                >ul {
+    
+                    >li {
+                        border-top: none;
+                        >a {
+                            height: 30px;
+                            font: 14px/30px 'NotoSansKR';
+                        }
+    
+                        
+                        >ul {
+    
+                            >li {
+    
+                                >a {
+                                    height: 30px;
+                                    font: 12px/30px 'NotoSansKR';
+                                }
                             }
                         }
-                    }
-
-                    &:first-of-type {
-                        border-top: none;
                     }
                 }
             }
         }
     }
+
 }
 
 @media screen and (max-width: 400px) {

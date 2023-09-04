@@ -2746,7 +2746,6 @@ a {
   justify-content: space-between;
   padding: 0 30px;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: height 0.5s;
 }
 #header h1 a {
   height: 100px;
@@ -3259,17 +3258,22 @@ a {
   }
 }
 @media screen and (max-width: 500px) {
-  .mobile-nav.mobile .mobile-close > i {
+  #header .mobile-nav {
+    width: 50%;
+  }
+  #header .mobile-nav.mobile .mobile-close > i {
     font-size: 20px;
   }
-  .mobile-nav.mobile > ul > li > a {
-    font: 16px/60px "NotoSansKR";
-  }
-  .mobile-nav.mobile > ul > li > ul > li > a {
-    font: 14px/40px "NotoSansKR";
-  }
-  .mobile-nav.mobile > ul > li:first-of-type {
+  #header .mobile-nav.mobile > ul > li {
     border-top: none;
+  }
+  #header .mobile-nav.mobile > ul > li > a {
+    height: 30px;
+    font: 14px/30px "NotoSansKR";
+  }
+  #header .mobile-nav.mobile > ul > li > ul > li > a {
+    height: 30px;
+    font: 12px/30px "NotoSansKR";
   }
 }
 @media screen and (max-width: 400px) {
