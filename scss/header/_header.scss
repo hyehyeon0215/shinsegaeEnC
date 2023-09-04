@@ -22,7 +22,8 @@
     justify-content: space-between;
     padding: 0 30px;
     background-color: rgba(0, 0, 0, .5);
-    // transition: height 0.5s visibility 1s;
+    overflow: hidden;
+    transition: height 0.5s;
 
     h1 {
         a {
@@ -119,12 +120,12 @@
 
     .mobile-nav {
         display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
 
         &.mobile {
             display: block;
-            position: absolute;
-            right: 0;
-            z-index: 3;
             width: 30%;
             height: 100vh;
             background-color: $mainColor;
@@ -282,6 +283,7 @@
                     }
     
                     .header-sub {
+                        transition: 0.5s;
                         visibility: visible;
                         text-align: center;
                     }
@@ -667,7 +669,7 @@
 
 @media screen and (max-width: $tablet) {
     #header {
-
+        overflow: auto;
         nav {
             display: none;
         }
@@ -737,6 +739,7 @@
     #header {
         height: 70px;
         padding: 0 20px;
+        overflow:auto;
     
         h1 {
             a {

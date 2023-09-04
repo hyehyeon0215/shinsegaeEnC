@@ -18,11 +18,15 @@ if(size < mobile_size) {
     sitemap_btn.addEventListener("click", (e)=>{
         e.preventDefault();
         mobile_nav.classList.add("mobile");
+        bg.style.zIndex = 5;
+        bg.classList.add('on');
     })
 
     mobile_close.addEventListener("click", (e)=> {
         e.preventDefault();
         mobile_nav.classList.remove("mobile");
+        bg.style.zIndex = 4;
+        bg.classList.remove('on');
     })
 }
 

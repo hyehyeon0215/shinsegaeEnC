@@ -2746,6 +2746,8 @@ a {
   justify-content: space-between;
   padding: 0 30px;
   background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: height 0.5s;
 }
 #header h1 a {
   height: 100px;
@@ -2821,12 +2823,12 @@ a {
 }
 #header .mobile-nav {
   display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 #header .mobile-nav.mobile {
   display: block;
-  position: absolute;
-  right: 0;
-  z-index: 3;
   width: 30%;
   height: 100vh;
   background-color: #DA2128;
@@ -2956,6 +2958,7 @@ a {
   position: relative;
 }
 #header.on .desktop-nav .header-gnb > li .header-sub {
+  transition: 0.5s;
   visibility: visible;
   text-align: center;
 }
@@ -3196,6 +3199,9 @@ a {
   }
 }
 @media screen and (max-width: 1024px) {
+  #header {
+    overflow: auto;
+  }
   #header nav {
     display: none;
   }
@@ -3235,6 +3241,7 @@ a {
   #header {
     height: 70px;
     padding: 0 20px;
+    overflow: auto;
   }
   #header h1 a {
     height: 70px;

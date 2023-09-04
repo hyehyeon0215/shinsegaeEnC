@@ -41,22 +41,21 @@ if(size < mobile_size) {
     sitemap_btn.addEventListener("click", (e)=>{
         e.preventDefault();
         mobile_nav.classList.add("mobile");
-
         mobile_close.addEventListener("click", (e)=> {
             e.preventDefault();
             mobile_nav.classList.remove("mobile");
         })
     })
-}
 
-mobile_li.forEach((el)=>{
-    el.addEventListener("click", ()=>{
-        mobile_li.forEach((el)=>{
-            el.classList.remove("on");
+    mobile_li.forEach((el)=>{
+        el.addEventListener("click", ()=>{
+            mobile_li.forEach((el)=>{
+                el.classList.remove("on");
+            })
+            el.classList.add("on");
         })
-        el.classList.add("on");
     })
-})
+}
 
 let num = 0;
 let timer = null;
