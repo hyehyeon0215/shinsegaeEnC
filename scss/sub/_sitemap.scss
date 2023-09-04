@@ -142,7 +142,6 @@
                             >li {
                                 margin-left: 10px;
                                 width: 100%;
-                                // height: auto;
                                 position: relative;
 
                                 &::before {
@@ -200,7 +199,6 @@
             }
         }
     }
-
 }
 
 @keyframes rotate {
@@ -210,188 +208,267 @@
 
 
 
-// @media screen and (max-width: 1919px) {
-//     #sitemap {
-//         height: auto;
-//         position: relative;
-//         flex-direction: column;
+
+// tablet(768px)까지 반응형, 그 이하 디바이스는 모바일 메뉴 사용
+
+
+@media screen and (max-width: 1919px) {
+    #sitemap {
+        height: auto;
+        min-height: 100vh;
+        overflow: auto;
+        flex-direction: column;
     
-//         .sitemap-close {
-//             position: fixed;
-//             right: 50px;
-//             z-index: 2;
-//         }
+        .sitemap-close {
+            z-index: 2;
+        }
     
-//         .sitemap-left {
-//             position: fixed;
-//             width: 100%;
-//             height: 100px;
-//             background-color: $mainColor;
-//             padding: 0 50px;
-//             display: flex;
-//             flex-direction: row;
-//             justify-content: space-between;
-//             align-items: center;
-//             box-shadow: 1px 1px 10px rgba(153, 153, 153, 0.1);
+        .sitemap-left {
+            width: 100%;
+            height: 100px;
+            padding: 0px;
+            display: block;
     
-//             >h2 {
-//                 display: flex;
-//                 flex-direction: row;
-//                 align-items: center;
-//                 gap: 10px;
-//                 color: #fff;
-//                 position: relative;
-//                 cursor: default;
+            >h2 {
+                flex-direction: row;
+                left: 20px;
+                top: 50%;
+                transform: translateY(-50%);
     
-//                 &::before {
-//                     display: block;
-//                     content: '';
-//                     width: 80px;
-//                     height: 80px;
-//                     position: absolute;
-//                     top: -100px;
-//                     left: 50%;
-//                     transform: translateX(-50%);
-//                     background-image: url('../img/logo/white.svg');
-//                     background-size: cover;
-//                     cursor: pointer;
-//                     animation: rotate 30s linear infinite;
-//                 }
+                &::before {
+                    display: none;
+                }
     
-//                 &:hover {
-//                     &::before {
-//                         animation-play-state: paused;
-//                     }
-//                 }
+                >img {
+                    width: 200px;
+                }
     
-//                 >img {
-//                     width: 80%;
-//                 }
+                >span {
+                    font: 26px/1 'NotoSansKR';
+                }
+            }
     
-//                 >span {
-//                     font: 30px/1 'NotoSansKR';
-//                 }
-//             }
+            >p {
+                right: 20px;
+                bottom: 20px;
+                width: auto;
+                height: auto;
+                display: block;
+                background-color: inherit;
+                color: #fff;
+            }
+        }
     
+        .sitemap-right {
+            width: 80%;
+            height: auto;
+            padding: 50px 0 100px;
+            margin: 0 auto;
     
-//             >p {
-//                 display: none;
-//             }
-//         }
+            .sitemap-1depth {
+                justify-content: space-around;
     
-//         .sitemap-right {
-//             width: 85%;
-//             height: 100%;
-//             padding: 100px;
-//             margin: 0 auto;
+                >li {
     
-//             .sitemap-1depth {
-//                 width: 100%;
-//                 height: 100%;
-//                 display: flex;
-//                 justify-content: space-around;
+                    .sitemap-2depth {
     
-//                 >li {
-//                     flex: 1;
+                        >li {
+                            >a {
+                                height: 70px;
+                                font: bold 20px/1 'NotoSansKR';
+                            }
     
-//                     >a {
-//                         display: flex;
-//                         width: 100%;
-//                         height: 100px;
-//                         align-items: center;
-//                         gap: 10px;
-//                         font: bold 30px/1 'NotoSansKR';
-//                         color: $subColor;
+                            .sitemap-3depth {
+                                >li {
+                                    >a {
+                                        height: 40px;
+                                        font: 16px/1 'NotoSansKR';
+                                        margin-left: 20px;
+                                    }
     
-//                         >span {
-//                             font: bold 18px/1 'NotoSanaKR';
-//                             color: $mainColor;
-//                         }
-//                     }
+                                    .sitemap-4depth {
+
+                                        flex-direction: column;
     
-//                     .sitemap-2depth {
-//                         width: 100%;
+                                        >li {
+                                            >a {
+                                                position: static;
+                                                width: 100%;
+                                                height: 20px;
+                                                margin-left: 7px;
+                                                font: 15px/20px 'NotoSansKR';
+                                                color: #888;
     
-//                         >li {
-//                             >a {
-//                                 display: flex;
-//                                 width: 100%;
-//                                 height: 50px;
-//                                 align-items: center;
-//                                 font: bold 18px/1 'NotoSansKR';
-//                                 color: $subColor;
+                                                &::before {
+                                                    display: inline-block;
+                                                    position: static;
+                                                    margin-right: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
     
-//                                 &::before {
-//                                     display: block;
-//                                     content: '·';
-//                                     margin: 0 10px;
-//                                 }
-//                             }
+                            }
+                        }
+                    }
     
-//                             .sitemap-3depth {
-//                                 width: 100%;
+                    &:nth-of-type(4) {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #sitemap {
+        .sitemap-right {
+            width: 90%;
+            height: auto;
+            padding: 50px 0 100px;
+            margin: 0 auto;
     
-//                                 >li {
-//                                     margin-left: 10px;
-//                                     width: 100%;
-//                                     // height: auto;
-//                                     position: relative;
+            .sitemap-1depth {
+                justify-content: space-around;
     
-//                                     &::before {
-//                                         display: block;
-//                                         content: '';
-//                                         width: 1px;
-//                                         height: 100%;
-//                                         background-color: $mainColor;
-//                                         position: absolute;
-//                                         left: 0px;
-//                                     }
+                >li {
     
-//                                     >a {
-//                                         display: flex;
-//                                         align-items: center;
-//                                         width: 100%;
-//                                         height: 30px;
-//                                         font: 16px/1 'NotoSansKR';
-//                                         color: #000;
-//                                         margin-left: 15px;
-//                                     }
+                    .sitemap-2depth {
     
-//                                     .sitemap-4depth {
-//                                         display: flex;
-//                                         gap: 20px;
-//                                         margin-left: 20px;
-//                                         padding-bottom: 20px;
+                        >li {
+                            >a {
+                                height: 70px;
+                                font: bold 20px/1 'NotoSansKR';
+                            }
     
-//                                         >li {
-//                                             >a {
-//                                                 position: relative;
-//                                                 display: block;
-//                                                 margin-left: 7px;
-//                                                 font: 15px/30px 'NotoSansKR';
-//                                                 color: #888;
+                            .sitemap-3depth {
+                                >li {
+                                    >a {
+                                        height: 40px;
+                                        font: 16px/1 'NotoSansKR';
+                                        margin-left: 20px;
+                                    }
     
-//                                                 &::before {
-//                                                     display: block;
-//                                                     content: '·';
-//                                                     position: absolute;
-//                                                     left: -7px;
-//                                                 }
-//                                             }
-//                                         }
-//                                     }
-//                                 }
+                                    .sitemap-4depth {
+
+                                        flex-direction: column;
     
-//                             }
-//                         }
-//                     }
+                                        >li {
+                                            >a {
+                                                position: static;
+                                                width: 100%;
+                                                height: 20px;
+                                                margin-left: 7px;
+                                                font: 15px/20px 'NotoSansKR';
+                                                color: #888;
     
-//                     &:nth-of-type(4) {
-//                         flex: 1.5;
-//                     }
-//                 }
-//             }
-//         }
+                                                &::before {
+                                                    display: inline-block;
+                                                    position: static;
+                                                    margin-right: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
     
-//     }
-// }
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(4) {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    #sitemap {
+        .sitemap-close {
+            width: 50px;
+            height: 50px;
+            
+            >i {
+                font-size: 20px;
+            }
+        }
+
+        .sitemap-right {
+            width: 80%;
+            height: auto;
+            padding: 50px 0 100px;
+            margin: 0 auto;
+    
+            .sitemap-1depth {
+                justify-content: space-between;
+                gap: 20px;
+    
+                >li {
+                    >a {
+                        height: 50px;
+                        font: bold 24px/1 'NotoSansKR';
+                        justify-content: center;
+                        border-bottom: 3px solid rgba($color: $mainColor, $alpha: .5);
+                        margin-bottom: 30px;
+
+                        >span {
+                            display: none;
+                        }
+                    }
+    
+                    .sitemap-2depth {
+    
+                        >li {
+                            >a {
+                                height: 40px;
+                                font: bold 16px/1 'NotoSansKR';
+                            
+                                &::before {
+                                    margin: 0 5px;
+                                }
+                            }
+    
+                            .sitemap-3depth {
+                                margin-bottom: 20px;
+                                >li {
+                                    >a {
+                                        height: 30px;
+                                        font: 15px/1 'NotoSansKR';
+                                        margin-left: 15px;
+                                    }
+    
+                                    .sitemap-4depth {
+                                        margin-top: 10px;
+                                        gap: 10px;
+
+                                        >li {
+                                            >a {
+                                                height: 20px;
+                                                margin-left: 0px;
+                                                font: 14px/20px 'NotoSansKR';
+    
+                                                &::before {
+                                                    margin-right: 5px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+    
+                            }
+                        }
+                    }
+    
+                    &:nth-of-type(4) {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+}
