@@ -121,3 +121,218 @@
     }
 
 }
+
+@media screen and (max-width: 1500px) {
+    #news {
+        >h2 {
+            font: bold 20px/1 'NotoSansKR';
+            margin-bottom: 50px;
+        }
+    
+        >article {
+            width: 100%;
+            height: calc(100% - 74px);
+    
+            >.news-nav {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                
+                >li {
+                    
+                    >a {
+                        width: 100px;
+                        height: 40px;
+                        font: 18px/40px 'NotoSansKR';
+                    }
+    
+                    &.on {
+                        >a {
+                            color: $mainColor;
+    
+                            &::after {
+                                height: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            >.news-list {
+    
+                >li {
+    
+                    >ul{
+
+                        >li {
+                            .txt {
+    
+                                >p {
+                                    font: 16px/1 'NotoSansKR';
+                                }
+    
+                                >span {
+                                    font: 14px/1 'NotoSansKR';
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    #news {
+        height: auto;
+        min-height: 100vh;
+        >h2 {
+            font: bold 16px/1 'NotoSansKR';
+            margin-bottom: 50px;
+
+            &::before {
+                width: 14px;
+                height: 14px;
+                background-image: url('../img/logo/color.svg');
+            }
+        }
+    
+        >article {
+            width: 100%;
+            height: auto;
+    
+            >.news-nav {
+                height: 30px;
+                
+                >li {
+                    >a {
+                        width: 80px;
+                        height: 40px;
+                        font: 14px/40px 'NotoSansKR';
+                    }
+                }
+            }
+    
+            >.news-list {
+                padding-top: 50px;
+                width: 100%;
+                height: 800px;
+                gap: 0;
+
+                >li {
+                    width: 100%;
+
+                    >ul{
+                        gap: 0;
+                        justify-content: start;
+
+                        >li {
+                            width: 50%;
+                            height: 30%;
+                            padding: 20px;
+
+                            .txt {
+                                
+                                >p {
+                                    font: 16px/1 'NotoSansKR';
+                                }
+    
+                                >span {
+                                    font: 14px/1 'NotoSansKR';
+                                    margin-top: 10px;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    #news {
+
+        >h2 {
+            font: bold 14px/1 'NotoSansKR';
+            margin-bottom: 30px;
+
+            &::before {
+                margin-right: 5px;
+            }
+        }
+    
+        >article {
+
+    
+            >.news-nav {
+                height: 30px;
+                
+                >li {
+                    >a {
+                        width: 60px;
+                        height: 30px;
+                        font: 12px/30px 'NotoSansKR';
+                    }
+
+                    &.on {
+                        >a {
+                            &::after {
+                                height: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+            >.news-list {
+                padding-top: 20px;
+                width: 100%;
+                min-height: 100vh;
+                height: auto;
+                gap: 0;
+
+                >li {
+                    width: 100%;
+
+                    >ul{
+                        gap: 0;
+                        justify-content: center;
+
+                        >li {
+                            width: 100%;
+                            height: 250px;
+                            padding: 20px;
+
+                            .img {
+                                height: 80%;
+                                overflow: hidden;
+                            }
+
+                            .txt {
+                                margin-top: 10px;
+                                height: 20%;
+                                >p {
+                                    font: 14px/1 'NotoSansKR';
+                                }
+    
+                                >span {
+                                    font: 12px/1 'NotoSansKR';
+                                    margin-top: 7px;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+    }
+}

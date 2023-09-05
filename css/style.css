@@ -382,7 +382,7 @@ a {
 }
 @media screen and (max-width: 1024px) {
   #field > h2 {
-    top: 130px;
+    top: 15%;
     font: bold 16px/1 "NotoSansKR";
   }
   #field > h2::before {
@@ -446,7 +446,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   #field {
-    height: 100vh;
+    min-height: 85vh;
   }
   #field > h2 {
     left: 10%;
@@ -495,7 +495,7 @@ a {
     font-size: 24px;
   }
   #field .frame-index.on {
-    top: 200px;
+    top: 150px;
     width: 80%;
     height: 60vh;
     gap: 0;
@@ -518,7 +518,7 @@ a {
   #field .field-img {
     display: flex;
     flex-direction: column;
-    top: 200px;
+    top: 150px;
     width: 80%;
     height: 60vh;
     margin-top: 0;
@@ -657,6 +657,145 @@ a {
   display: flex;
 }
 
+@media screen and (max-width: 1500px) {
+  #news > h2 {
+    font: bold 20px/1 "NotoSansKR";
+    margin-bottom: 50px;
+  }
+  #news > article {
+    width: 100%;
+    height: calc(100% - 74px);
+  }
+  #news > article > .news-nav {
+    width: 100%;
+    height: 40px;
+    display: flex;
+  }
+  #news > article > .news-nav > li > a {
+    width: 100px;
+    height: 40px;
+    font: 18px/40px "NotoSansKR";
+  }
+  #news > article > .news-nav > li.on > a {
+    color: #DA2128;
+  }
+  #news > article > .news-nav > li.on > a::after {
+    height: 3px;
+  }
+  #news > article > .news-list > li > ul > li .txt > p {
+    font: 16px/1 "NotoSansKR";
+  }
+  #news > article > .news-list > li > ul > li .txt > span {
+    font: 14px/1 "NotoSansKR";
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #news {
+    height: auto;
+    min-height: 100vh;
+  }
+  #news > h2 {
+    font: bold 16px/1 "NotoSansKR";
+    margin-bottom: 50px;
+  }
+  #news > h2::before {
+    width: 14px;
+    height: 14px;
+    background-image: url("../img/logo/color.svg");
+  }
+  #news > article {
+    width: 100%;
+    height: auto;
+  }
+  #news > article > .news-nav {
+    height: 30px;
+  }
+  #news > article > .news-nav > li > a {
+    width: 80px;
+    height: 40px;
+    font: 14px/40px "NotoSansKR";
+  }
+  #news > article > .news-list {
+    padding-top: 50px;
+    width: 100%;
+    height: 800px;
+    gap: 0;
+  }
+  #news > article > .news-list > li {
+    width: 100%;
+  }
+  #news > article > .news-list > li > ul {
+    gap: 0;
+    justify-content: start;
+  }
+  #news > article > .news-list > li > ul > li {
+    width: 50%;
+    height: 30%;
+    padding: 20px;
+  }
+  #news > article > .news-list > li > ul > li .txt > p {
+    font: 16px/1 "NotoSansKR";
+  }
+  #news > article > .news-list > li > ul > li .txt > span {
+    font: 14px/1 "NotoSansKR";
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #news > h2 {
+    font: bold 14px/1 "NotoSansKR";
+    margin-bottom: 30px;
+  }
+  #news > h2::before {
+    margin-right: 5px;
+  }
+  #news > article > .news-nav {
+    height: 30px;
+  }
+  #news > article > .news-nav > li > a {
+    width: 60px;
+    height: 30px;
+    font: 12px/30px "NotoSansKR";
+  }
+  #news > article > .news-nav > li.on > a::after {
+    height: 2px;
+  }
+  #news > article > .news-list {
+    padding-top: 20px;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    gap: 0;
+  }
+  #news > article > .news-list > li {
+    width: 100%;
+  }
+  #news > article > .news-list > li > ul {
+    gap: 0;
+    justify-content: center;
+  }
+  #news > article > .news-list > li > ul > li {
+    width: 100%;
+    height: 250px;
+    padding: 20px;
+  }
+  #news > article > .news-list > li > ul > li .img {
+    height: 80%;
+    overflow: hidden;
+  }
+  #news > article > .news-list > li > ul > li .txt {
+    margin-top: 10px;
+    height: 20%;
+  }
+  #news > article > .news-list > li > ul > li .txt > p {
+    font: 14px/1 "NotoSansKR";
+  }
+  #news > article > .news-list > li > ul > li .txt > span {
+    font: 12px/1 "NotoSansKR";
+    margin-top: 7px;
+  }
+}
 #villiv {
   position: relative;
   width: 100%;

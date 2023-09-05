@@ -317,7 +317,7 @@
 @media screen and (max-width: $tablet) {
     #field {
         >h2 {
-            top: 130px;
+            top: 15%;
             font: bold 16px/1 'NotoSansKR';
 
             &::before {
@@ -402,7 +402,8 @@
 
 @media screen and (max-width: $mobile) {
     #field {
-        height: 100vh;
+        min-height: 85vh;
+
         >h2 {
             left: 10%;
             top: 100px;
@@ -457,7 +458,7 @@
             }
     
             &.on {
-                top: 200px;
+                top: 150px;
                 width: 80%;
                 height: 60vh;
                 
@@ -489,7 +490,7 @@
         .field-img {
             display: flex;
             flex-direction: column;
-            top: 200px;
+            top: 150px;
             width: 80%;
             height: 60vh;
             margin-top: 0;
