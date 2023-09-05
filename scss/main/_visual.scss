@@ -90,3 +90,42 @@
         }
     }
 }
+
+@media screen and (max-width: $tablet) {
+    #main-visual {
+
+        .frame-name {
+            top: 130px;
+            transform: none;
+    
+            >li {
+                >a {
+                    font: 16px/1 'NotoSansKR';
+                    background-color: rgba(0,0,0,.5);
+                    padding: 5px 10px;
+    
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    #main-visual {
+
+        .frame-name {
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+    
+            >li {
+                >a {
+                    font: 14px/1 'NotoSansKR';
+                }
+            }
+        }
+    }
+}

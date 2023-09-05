@@ -102,6 +102,30 @@ a {
   display: block;
 }
 
+@media screen and (max-width: 1024px) {
+  #main-visual .frame-name {
+    top: 130px;
+    transform: none;
+  }
+  #main-visual .frame-name > li > a {
+    font: 16px/1 "NotoSansKR";
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+  }
+  #main-visual .frame-name > li > a::after {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  #main-visual .frame-name {
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #main-visual .frame-name > li > a {
+    font: 14px/1 "NotoSansKR";
+  }
+}
 #field {
   position: relative;
   width: 100%;
@@ -2926,7 +2950,7 @@ a {
     font-size: 25px;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1090px) {
   #header {
     overflow: auto;
   }
