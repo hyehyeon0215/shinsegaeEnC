@@ -1,6 +1,6 @@
-const main_header = document.querySelector("#header");
-const gnb = main_header.querySelectorAll(".desktop-nav > .header-gnb >li");
-const sub = main_header.querySelectorAll(".header-sub > li");
+const header = document.querySelector("#header");
+const gnb = header.querySelectorAll(".desktop-nav > .header-gnb >li");
+const sub = header.querySelectorAll(".header-sub > li");
 const bg = document.querySelector(".main-bg");
 
 const search_btn = document.querySelector(".search-btn");
@@ -41,13 +41,13 @@ mobile_li.forEach((el)=>{
 
 gnb.forEach((el)=>{
     el.addEventListener("mouseenter", ()=>{
-        main_header.classList.add('on');
+        header.classList.add('on');
         bg.classList.add('on');
     })
 
-    main_header.addEventListener("mouseleave", ()=> {
-        if(main_header.classList.contains('on')) {
-            main_header.classList.remove('on');
+    header.addEventListener("mouseleave", ()=> {
+        if(header.classList.contains('on')) {
+            header.classList.remove('on');
             bg.classList.remove('on');
         }
     })
@@ -55,16 +55,14 @@ gnb.forEach((el)=>{
 })
 
 
-
-
 search_btn.addEventListener("click", ()=> {
-    if(main_header.classList.contains('search')) {
-        main_header.classList.remove('search');
+    if(header.classList.contains('search')) {
+        header.classList.remove('search');
         bg.classList.remove('on');
     }
     else {
-        main_header.classList.remove('on');
-        main_header.classList.add('search');
+        header.classList.remove('on');
+        header.classList.add('search');
     
         if (!(bg.classList.contains('on'))) {
             bg.classList.add('on');
@@ -74,7 +72,7 @@ search_btn.addEventListener("click", ()=> {
 
 search_cls.addEventListener("click", (e)=>{
     e.preventDefault();
-    main_header.classList.remove('search');
+    header.classList.remove('search');
     bg.classList.remove('on');
 })
 
