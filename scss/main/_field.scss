@@ -235,3 +235,311 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
 }
+
+@media screen and (max-width: 1500px) {
+    #field {
+        >h2 {
+            left: 15%;
+            top: 200px;
+            font: bold 20px/1 'NotoSansKR';
+        }
+    
+        .frame-index {
+            top: -50px;
+            left: 50%;
+            width: 80%;
+            transform: translate(-50%, -50%);
+    
+            >li {
+                >a {
+                    font: 30px/1 'NotoSansKR';
+
+                    >span {
+                        font-size: 20px;
+                    }
+                }
+    
+                .bar {
+                    height: 3px;
+                }
+    
+                &.on {
+                    >a {
+                        font: 45px/1 'NotoSansKR';
+                        gap: 20px;
+    
+                        >span {
+                            font-size: 30px;
+                        }
+                    }
+                }
+    
+            }
+    
+            &.on {
+                top: 350px;
+                width: 70vw;
+                height: 80px;
+    
+                >li {
+                    >a {
+                        font: 24px/1 'NotoSansKR';
+    
+                        >span {
+                            font-size: 18px;
+                        }
+                    }
+
+                    &.on {
+                        >a {
+                            gap: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    
+        .field-img {
+            top: 350px;
+            height: 45vh;
+            margin-top: 0;
+    
+            >li {
+                .field-txt {
+                    top: -50px;
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    #field {
+        >h2 {
+            top: 130px;
+            font: bold 16px/1 'NotoSansKR';
+
+            &::before {
+                width: 14px;
+                height: 14px;
+                background-image: url('../img/logo/color.svg');
+            }
+        }
+    
+        .frame-index {
+            top: calc(150 / 4);
+            height: 150px;
+    
+            >li {
+                padding-top: 20px;
+                >a {
+                    font: 20px/1 'NotoSansKR';
+
+                    >span {
+                        font-size: 16px;
+                    }
+                }
+    
+                .bar {
+                    height: 3px;
+                }
+    
+                &.on {
+                    flex: 1.3;
+                    padding-top: 30px;
+                    >a {
+                        font: 30px/1 'NotoSansKR';
+                        gap: 10px;
+    
+                        >span {
+                            font-size: 24px;
+                        }
+                    }
+                }
+    
+            }
+    
+            &.on {
+                top: 40%;
+                width: 70vw;
+                height: 40px;
+    
+                >li {
+                    >a {
+                        font: 20px/1 'NotoSansKR';
+    
+                        >span {
+                            display: none;
+                        }
+                    }
+
+                    &.on {
+                        padding-top: 0px;
+                        flex: 1;
+                        >a {
+                            font: 20px/1 'NotoSansKR';
+                        }
+                    }
+                }
+            }
+        }
+    
+        .field-img {
+            top: 40%;
+            height: 40vh;
+            margin-top: 0;
+    
+            >li {
+                .field-txt {
+                    top: -40px;
+                }
+                
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    #field {
+        height: 100vh;
+        >h2 {
+            left: 10%;
+            top: 100px;
+            font: bold 14px/1 'NotoSansKR';
+
+            &::before {
+                margin-right: 5px;
+                width: 14px;
+                height: 14px;
+                background-image: url('../img/logo/color.svg');
+            }
+        }
+    
+        .frame-index {
+            left: 0;
+            top: -40%;
+            transform: none;
+            flex-direction: column;
+            align-items: start;
+            height: 200px;
+            width: 140px;
+    
+            >li {
+                padding-top: 0px;
+                width: 60%;
+                height: auto;
+                justify-content: center;
+                align-items: center;
+
+                >a {
+                    font: 14px/1 'NotoSansKR';
+                    flex-direction: row;
+                    >span {
+                        display: none;
+                    }
+                }
+
+                &.on {
+                    flex: 1.2;
+                    width: 100%;
+                    padding-top: 0px;
+                    >a {
+                        font: 20px/1 'NotoSansKR';
+                        gap: 10px;
+    
+                        >span {
+                            font-size: 24px;
+                        }
+                    }
+                }
+    
+            }
+    
+            &.on {
+                top: 200px;
+                width: 80%;
+                height: 60vh;
+                
+                gap: 0;
+    
+                >li {
+                    margin: 10px;
+                    width: 30%;
+                    height: 30%;
+                    flex: 1;
+
+                    >a {
+                        font: 16px/1 'NotoSansKR';
+    
+                        >span {
+                            display: none;
+                        }
+                    }
+
+                    &.on {
+                        >a {
+                            font: 16px/1 'NotoSansKR';
+                        }
+                    }
+                }
+            }
+        }
+    
+        .field-img {
+            display: flex;
+            flex-direction: column;
+            top: 200px;
+            width: 80%;
+            height: 60vh;
+            margin-top: 0;
+            gap: 0;
+    
+            >li {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                margin: 10px;
+
+                .field-txt {
+                    position: absolute;
+                    top: 50%;
+                    left: 70%;
+                    transform: translateY(-50%);
+                    display: flex;
+                    width: 30%;
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+
+                    span {
+
+                        &.field-num {
+                            font: bold 20px/1 "arial";
+                            
+                        }
+
+                        &:nth-of-type(2) {
+                            margin-left: 5px;
+                            font: 18/1 "NotoSansKR";
+                        }
+                    }
+
+                    &::after {
+                        display: none;
+                    }
+                }
+
+                a {
+                    position: absolute;
+                    left: 30%;
+                    width: 40%;
+                    height: 100%;
+                }
+                
+            }
+
+
+        }
+    }
+}

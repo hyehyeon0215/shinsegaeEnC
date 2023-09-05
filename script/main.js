@@ -98,6 +98,7 @@ function doScroll(scroll_index) {
 
 let isOn = true;
 
+
 window.addEventListener("scroll", () => {
     if (window.pageYOffset > scroll_section[1].offsetTop - 10) {
         main_header.classList.add('white');
