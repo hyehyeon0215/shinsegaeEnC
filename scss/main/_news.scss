@@ -1,0 +1,123 @@
+#news {
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 150px 0 50px;
+
+    >h2 {
+        font: 24px/1 'NotoSansKR';
+        margin-bottom: 50px;
+
+        &::before {
+            display: inline-block;
+            content: '';
+            width: 18px;
+            height: 18px;
+            background-image: url('../img/logo/color.svg');
+            background-size: cover;
+            margin-right: 10px;
+        }
+    }
+
+    >article {
+        width: 100%;
+        height: calc(100% - 74px);
+
+        >.news-nav {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            
+            >li {
+                
+                >a {
+                    display: block;
+                    width: 150px;
+                    height: 40px;
+                    text-align: center;
+                    font: bold 20px/40px 'NotoSansKR';
+                }
+
+                &.on {
+                    >a {
+                        color: $mainColor;
+
+                        &::after {
+                            display: block;
+                            content: '';
+                            width: 100%;
+                            height: 5px;
+                            background-color: $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+
+        >.news-list {
+            padding-top: 50px;
+            width: 100%;
+            height: calc(100% - 50px);
+
+            >li {
+                display: none;
+                width: auto;
+                height: 100%;
+
+
+                >ul{
+                    width: calc(100%);
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 20px;
+
+                    >li {
+                        width: calc(100%/3 - 20px);
+                        height: calc(50% - 20px);
+                        cursor: pointer;
+
+                        .img {
+                            width: 100%;
+                            height: 60%;
+                            
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+
+                        .txt {
+                            width: 100%;
+                            margin-top: 20px;
+
+                            >p {
+                                font: 18px/1 'NotoSansKR';
+                                width: 100%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                white-space: nowrap;
+                            }
+
+                            >span {
+                                display: block;
+                                color: #aaa;
+                                margin-top: 5px;
+                            }
+                        }
+                    }
+                }
+
+                &.on {
+                    display: flex;
+                }
+            }
+
+        }
+    }
+
+}

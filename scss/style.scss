@@ -1,14 +1,8 @@
-// @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-
-
-// @font-face
-// {
-//     font-family: 'AppleSD';
-//     src: url('../font/AppleSDGothicNeoR.ttf') format('truetype');
-// }
-
-@import './reset.scss';
-@import './main.scss';
+@import './common/reset';
+@import './main/visual';
+@import './main/field';
+@import './main/news';
+@import './main/villiv';
 @import './sub/location';
 @import './sub/business';
 @import './sub/sub';
